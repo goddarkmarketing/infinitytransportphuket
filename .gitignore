@@ -1,0 +1,5 @@
+# Nested clone / vendor snapshot (not used by site pages)
+_lk3_font_repo/
+
+Thumbs.db
+.DS_Store
