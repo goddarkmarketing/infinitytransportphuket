@@ -177,9 +177,9 @@
     "about.std.c.h": { th: "Premium Experience", en: "Premium experience" },
     "about.std.c.p": { th: "ออกแบบประสบการณ์เดินทางให้เรียบหรู สบาย และเหมาะกับโอกาสสำคัญของคุณ", en: "Comfortable, refined travel for your important moments." },
     "about.hero.eyebrow": { th: "เกี่ยวกับเรา", en: "About us" },
-    "about.hero.img_aria": {
-      th: "ภาพบรรยากาศการเดินทางในภูเก็ต",
-      en: "Atmosphere of chauffeured travel in Phuket",
+    "about.hero.img_alt": {
+      th: "ผู้โดยสารหญิงพักผ่อนอ่านหนังสือในห้องรับรองระดับพรีเมียม พร้อมกระเป๋าเดินทาง — บรรยากาศเดินทางหรูและมั่นใจ",
+      en: "A guest reading in a premium lounge with luggage — luxury, confident travel",
     },
     "about.cta.contact": { th: "ติดต่อจองรถ", en: "Contact to book" },
     "about.cta.fleet": { th: "ดูรถและราคา", en: "Fleet & pricing" },
