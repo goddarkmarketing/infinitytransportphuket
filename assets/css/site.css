@@ -3091,19 +3091,22 @@ textarea {
     grid-column: 1 / -1;
   }
 
+  /* Tall enough for full-width card (square img + text + CTA + dots); absolute children don't stretch parent */
   .car-carousel {
-    min-height: 430px;
+    min-height: clamp(540px, 128vw, 780px);
   }
 
   .carousel-viewport {
-    min-height: 430px;
+    min-height: clamp(540px, 128vw, 780px);
     max-width: 100%;
     margin-inline: auto;
-    contain: paint;
+    contain: none;
   }
 
+  /* Match sidebar card width (full column) */
   .car-carousel .car-option {
-    width: min(100%, min(300px, 92%));
+    width: 100%;
+    max-width: 100%;
   }
 
   /* One card only under desktop — avoids iPad / narrow widths peeking past viewport */
@@ -3138,6 +3141,10 @@ textarea {
 
   .carousel-nav.next {
     right: 8px;
+  }
+
+  .carousel-dots {
+    margin-top: 14px;
   }
 
   .car-option {
@@ -3261,18 +3268,6 @@ textarea {
 
   .car-sidebar {
     grid-template-columns: 1fr;
-  }
-
-  .car-carousel {
-    min-height: 410px;
-  }
-
-  .carousel-viewport {
-    min-height: 410px;
-  }
-
-  .car-carousel .car-option {
-    width: min(100%, min(320px, 92%));
   }
 
   .reviews-nav {
