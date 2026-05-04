@@ -551,6 +551,7 @@ p {
 }
 
 .car-select-section {
+  overflow-x: hidden;
   background-color: #060606;
   background-image:
     linear-gradient(180deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.86) 100%),
@@ -1283,6 +1284,8 @@ p {
   position: relative;
   display: grid;
   gap: 10px;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .car-carousel {
@@ -1293,8 +1296,10 @@ p {
 .carousel-viewport {
   position: relative;
   min-height: 470px;
+  max-width: 100%;
   /* clip transformed side cards; overflow-x alone can still expand scrollWidth on some engines */
   overflow: hidden;
+  contain: paint;
 }
 
 .car-carousel .car-option {
@@ -3068,6 +3073,8 @@ textarea {
 
   .carousel-main {
     order: -1;
+    min-width: 0;
+    max-width: 100%;
   }
 
   .car-sidebar {
@@ -3090,10 +3097,38 @@ textarea {
 
   .carousel-viewport {
     min-height: 430px;
+    max-width: 100%;
+    margin-inline: auto;
+    contain: paint;
   }
 
   .car-carousel .car-option {
-    width: min(100%, 300px);
+    width: min(100%, min(300px, 92%));
+  }
+
+  /* One card only under desktop — avoids iPad / narrow widths peeking past viewport */
+  .car-carousel .car-option.is-left,
+  .car-carousel .car-option.is-right {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transform: translateX(-50%) scale(0.88) !important;
+    filter: blur(2px) !important;
+    z-index: 0 !important;
+  }
+
+  .car-carousel .car-option.is-left img,
+  .car-carousel .car-option.is-right img {
+    filter: none !important;
+  }
+
+  .car-carousel .car-option.is-center {
+    z-index: 3;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    transform: translateX(-50%) scale(1);
+    filter: none !important;
   }
 
   .carousel-nav.prev {
@@ -3142,17 +3177,6 @@ textarea {
 
   .split-cta {
     grid-template-columns: 1fr;
-  }
-}
-
-/* Tablet only: keep 3-card peek (same as pre-split behaviour under 980px) */
-@media (max-width: 980px) and (min-width: 761px) {
-  .car-carousel .car-option.is-left {
-    transform: translateX(calc(-50% - 245px)) scale(0.8);
-  }
-
-  .car-carousel .car-option.is-right {
-    transform: translateX(calc(-50% + 245px)) scale(0.8);
   }
 }
 
@@ -3248,32 +3272,7 @@ textarea {
   }
 
   .car-carousel .car-option {
-    width: min(100%, min(320px, 92vw));
-  }
-
-  /* One card at a time — no side stack / peek on phones */
-  .car-carousel .car-option.is-left,
-  .car-carousel .car-option.is-right {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transform: translateX(-50%) scale(0.88);
-    filter: blur(2px);
-    z-index: 0;
-  }
-
-  .car-carousel .car-option.is-left img,
-  .car-carousel .car-option.is-right img {
-    filter: none;
-  }
-
-  .car-carousel .car-option.is-center {
-    z-index: 3;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    transform: translateX(-50%) scale(1);
-    filter: none;
+    width: min(100%, min(320px, 92%));
   }
 
   .reviews-nav {
