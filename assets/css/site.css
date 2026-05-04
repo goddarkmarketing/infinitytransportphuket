@@ -1293,7 +1293,8 @@ p {
 .carousel-viewport {
   position: relative;
   min-height: 470px;
-  overflow-x: hidden;
+  /* clip transformed side cards; overflow-x alone can still expand scrollWidth on some engines */
+  overflow: hidden;
 }
 
 .car-carousel .car-option {
@@ -3149,6 +3150,27 @@ textarea {
 
   .split-cta {
     grid-template-columns: 1fr;
+  }
+}
+
+/* After 980px carousel rules: pull side cards inward on phones so peek stays inside clipped viewport */
+@media (max-width: 560px) {
+  .car-carousel .car-option.is-left {
+    transform: translateX(calc(-50% - min(245px, 28vw))) scale(0.8);
+  }
+
+  .car-carousel .car-option.is-right {
+    transform: translateX(calc(-50% + min(245px, 28vw))) scale(0.8);
+  }
+}
+
+@media (max-width: 400px) {
+  .car-carousel .car-option.is-left {
+    transform: translateX(calc(-50% - min(200px, 24vw))) scale(0.78);
+  }
+
+  .car-carousel .car-option.is-right {
+    transform: translateX(calc(-50% + min(200px, 24vw))) scale(0.78);
   }
 }
 
