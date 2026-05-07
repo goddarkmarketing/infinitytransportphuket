@@ -15,6 +15,7 @@
     "nav.about": { th: "เกี่ยวกับเรา", en: "About" },
     "nav.reviews": { th: "รีวิว", en: "Reviews" },
     "nav.contact": { th: "ติดต่อ", en: "Contact" },
+    "nav.articles": { th: "บทความ", en: "Articles" },
     "nav.cta": { th: "จองรถทันที", en: "Book now" },
 
     "meta.title.index": { th: "Infinity Transport Phuket | รถพร้อมคนขับภูเก็ต", en: "Infinity Transport Phuket | Chauffeur service" },
@@ -24,6 +25,7 @@
     "meta.title.fleet": { th: "รถทั้งหมด | Infinity Transport Phuket", en: "Fleet | Infinity Transport Phuket" },
     "meta.title.pricing": { th: "ราคาและแพ็กเกจ | Infinity Transport Phuket", en: "Rates & packages | Infinity Transport Phuket" },
     "meta.title.reviews": { th: "รีวิวลูกค้า | Infinity Transport Phuket", en: "Customer reviews | Infinity Transport Phuket" },
+    "meta.title.articles": { th: "บทความท่องเที่ยว | Infinity Transport Phuket", en: "Travel articles | Infinity Transport Phuket" },
 
     "footer.tagline": {
       th: "รถพร้อมคนขับภูเก็ต เน้นตรงเวลา ปลอดภัย และบริการมืออาชีพ ตลอด 24 ชั่วโมง",
@@ -69,7 +71,7 @@
     "booking.wa_sub": { th: "ส่งข้อความภาษาไทยหรืออังกฤษ", en: "Message in Thai or English" },
     "booking.close_aria": { th: "ปิดหน้าต่างจอง", en: "Close booking dialog" },
 
-    "car.filter_group_aria": { th: "กรองและค้นหารุ่นรถ", en: "Filter and search models" },
+    "car.filter_group_aria": { th: "ค้นหารุ่นรถ", en: "Search vehicle models" },
     "car.filter_all": { th: "ทั้งหมด", en: "All" },
     "car.search_label": { th: "ค้นหารุ่น", en: "Search model" },
     "car.search_ph": { th: "เช่น Alphard, Sprinter…", en: "e.g. Alphard, Sprinter…" },
@@ -120,7 +122,7 @@
     "index.fleet.th_model": { th: "รุ่น / ประเภทรถ", en: "Model / type" },
     "index.fleet.th_seats": { th: "จำนวนที่นั่ง", en: "Seats" },
     "index.fleet.per_trip": { th: "ต่อเที่ยว", en: "per trip" },
-    "index.fleet.hours4": { th: "4 ชั่วโมง", en: "4 hours" },
+    "index.fleet.hours4": { th: "6 ชั่วโมง", en: "6 hours" },
     "index.fleet.hours10": { th: "10 ชั่วโมง", en: "10 hours" },
     "index.price.eyebrow": { th: "ราคาเริ่มต้น", en: "Starting rates" },
     "index.price.h2": { th: "เริ่มต้นชัดเจน ตัดสินใจง่าย", en: "Clear starting prices" },
@@ -129,6 +131,31 @@
     "index.price.th_unit": { th: "ระยะเวลา / หน่วย", en: "Duration / unit" },
     "index.split.btn_models": { th: "ดูรายละเอียดรถแต่ละรุ่น", en: "Model details" },
     "index.split.btn_packages": { th: "ดูแพ็กเกจทั้งหมด", en: "All packages" },
+
+    "index.album.eyebrow": { th: "ทำไมต้องเรา", en: "Why us" },
+    "index.album.h2": {
+      th: "ทำไมต้องเช่ารถตู้พร้อมคนขับกับ Infinity Transport Phuket",
+      en: "Why book a chauffeured van with Infinity Transport Phuket",
+    },
+    "index.album.lead": {
+      th: "รถตู้และรถหรูพร้อมคนขับมืออาชีพในภูเก็ต เน้นความปลอดภัย ตรงเวลา และบริการที่เป็นกันเองตลอดเส้นทาง",
+      en: "Premium vans and chauffeured cars in Phuket — safe, on time, and genuinely welcoming from pickup to drop-off.",
+    },
+    "index.album.point1": {
+      th: "คนขับมืออาชีพ สุภาพ ชำนาญเส้นทางในภูเก็ตและสนามบิน",
+      en: "Professional, courteous drivers who know Phuket and airport routes inside out.",
+    },
+    "index.album.point2": {
+      th: "รถสะอาด ปรับอากาศเย็นสบาย นั่งสบายทั้งครอบครัวและหมู่คณะ",
+      en: "Clean, air-conditioned vehicles — comfortable for families and groups.",
+    },
+    "index.album.point3": {
+      th: "ราคาและแพ็กเกจชัดเจน จองง่าย ติดต่อได้ตลอด 24 ชั่วโมง",
+      en: "Clear rates and packages, easy booking, and 24/7 contact when you need us.",
+    },
+    "index.album.grid_aria": { th: "อัลบั้มภาพรถและบริการ", en: "Gallery of vehicles and service" },
+    "index.album.prev_aria": { th: "เลื่อนอัลบั้มไปภาพก่อนหน้า", en: "Previous gallery slide" },
+    "index.album.next_aria": { th: "เลื่อนอัลบั้มไปภาพถัดไป", en: "Next gallery slide" },
 
     "index.trust.eyebrow": { th: "ความน่าเชื่อถือ", en: "Trust" },
     "index.trust.h2": { th: "ลูกค้าไว้วางใจเพราะเราใส่ใจทุกรายละเอียด", en: "Trusted because we mind every detail" },

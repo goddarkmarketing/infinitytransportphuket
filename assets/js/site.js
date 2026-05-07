@@ -676,3 +676,249 @@ if (carButtons.length && selectedCarText && selectedCarBookLink) {
     { passive: true },
   );
 })();
+
+(() => {
+  const root = document.querySelector("[data-home-album]");
+  if (!root) return;
+
+  const viewport = root.querySelector("[data-home-album-viewport]");
+  const track = root.querySelector("[data-home-album-track]");
+  const prevBtn = root.querySelector("[data-home-album-prev]");
+  const nextBtn = root.querySelector("[data-home-album-next]");
+  const tmpl = document.getElementById("home-album-imgs");
+
+  if (!viewport || !track || !prevBtn || !nextBtn || !tmpl) return;
+
+  const sources = Array.from(tmpl.content.querySelectorAll("img"));
+  if (!sources.length) return;
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+  const getGapPx = () => {
+    const g = getComputedStyle(track).gap;
+    const val = parseFloat(g, 10);
+    return Number.isFinite(val) && val >= 0 ? val : 14;
+  };
+
+  /** One large slide at a time (still advances one image per step, infinite loop). */
+  const getPerView = (count) => Math.min(1, Math.max(0, count));
+
+  const n = sources.length;
+  let perView = 1;
+  let loopMode = false;
+  let cellW = 0;
+  let step = 0;
+  let pos = 0;
+  let layoutAttempts = 0;
+  let lastBuiltPerView = -1;
+  let lastBuiltLoop = null;
+  /** @type {"next" | "prev" | null} */
+  let pendingSnap = null;
+
+  const makeSlide = (imgEl) => {
+    const slide = document.createElement("div");
+    slide.className = "home-album__slide";
+    slide.appendChild(imgEl.cloneNode(true));
+    return slide;
+  };
+
+  const setTransitionOn = (on) => {
+    track.classList.toggle("is-no-trans", !on);
+  };
+
+  const applyTransform = () => {
+    if (!track.firstChild || !Number.isFinite(step) || step <= 0) return;
+    if (!loopMode) {
+      track.style.transform = "translateX(0)";
+      return;
+    }
+    const firstIdx = n + pos;
+    track.style.transform = `translateX(${-(firstIdx * step)}px)`;
+  };
+
+  const syncNav = () => {
+    const off = !loopMode;
+    prevBtn.disabled = off;
+    nextBtn.disabled = off;
+  };
+
+  const buildTrackIfNeeded = () => {
+    const pv = getPerView(n);
+    const lm = n > pv;
+    if (track.childElementCount && pv === lastBuiltPerView && lm === lastBuiltLoop) {
+      perView = pv;
+      loopMode = lm;
+      return;
+    }
+
+    pos = 0;
+    pendingSnap = null;
+    lastBuiltPerView = pv;
+    lastBuiltLoop = lm;
+    perView = pv;
+    loopMode = lm;
+    track.replaceChildren();
+
+    if (loopMode) {
+      for (let rep = 0; rep < 3; rep += 1) {
+        for (let i = 0; i < n; i += 1) {
+          track.appendChild(makeSlide(sources[i]));
+        }
+      }
+    } else {
+      for (let i = 0; i < n; i += 1) {
+        track.appendChild(makeSlide(sources[i]));
+      }
+    }
+  };
+
+  const layout = () => {
+    const vw = viewport.clientWidth;
+    if (vw < 48) {
+      if (layoutAttempts < 40) {
+        layoutAttempts += 1;
+        requestAnimationFrame(layout);
+      }
+      return;
+    }
+    layoutAttempts = 0;
+
+    buildTrackIfNeeded();
+
+    const gap = getGapPx();
+    cellW = (vw - (perView - 1) * gap) / perView;
+    if (!Number.isFinite(cellW) || cellW < 0) cellW = 0;
+    step = cellW + gap;
+
+    const slides = track.querySelectorAll(".home-album__slide");
+    slides.forEach((el) => {
+      el.style.width = `${cellW}px`;
+      const img = el.querySelector("img");
+      if (img && !img.complete) {
+        img.addEventListener("load", scheduleLayout, { once: true });
+      }
+    });
+
+    const slideCount = slides.length;
+    if (slideCount) {
+      track.style.width = `${slideCount * cellW + Math.max(0, slideCount - 1) * gap}px`;
+    }
+
+    setTransitionOn(false);
+    applyTransform();
+    void track.offsetHeight;
+    setTransitionOn(!reduceMotion.matches);
+
+    syncNav();
+  };
+
+  const goNext = () => {
+    if (!loopMode) return;
+    if (reduceMotion.matches) {
+      pos = (pos + 1) % n;
+      applyTransform();
+      return;
+    }
+    if (pos < n - 1) {
+      pos += 1;
+      applyTransform();
+      return;
+    }
+    pendingSnap = "next";
+    setTransitionOn(true);
+    track.style.transform = `translateX(${-(2 * n) * step}px)`;
+  };
+
+  const goPrev = () => {
+    if (!loopMode) return;
+    if (reduceMotion.matches) {
+      pos = (pos - 1 + n) % n;
+      applyTransform();
+      return;
+    }
+    if (pos > 0) {
+      pos -= 1;
+      applyTransform();
+      return;
+    }
+    pendingSnap = "prev";
+    setTransitionOn(true);
+    track.style.transform = `translateX(${-(n - 1) * step}px)`;
+  };
+
+  track.addEventListener("transitionend", (e) => {
+    if (e.target !== track || e.propertyName !== "transform") return;
+    if (pendingSnap === "next") {
+      pendingSnap = null;
+      pos = 0;
+      setTransitionOn(false);
+      track.style.transform = `translateX(${-(n * step)}px)`;
+      void track.offsetHeight;
+      setTransitionOn(!reduceMotion.matches);
+    } else if (pendingSnap === "prev") {
+      pendingSnap = null;
+      pos = n - 1;
+      setTransitionOn(false);
+      track.style.transform = `translateX(${-(2 * n - 1) * step}px)`;
+      void track.offsetHeight;
+      setTransitionOn(!reduceMotion.matches);
+    }
+  });
+
+  prevBtn.addEventListener("click", goPrev);
+  nextBtn.addEventListener("click", goNext);
+
+  viewport.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowLeft") {
+      e.preventDefault();
+      goPrev();
+    } else if (e.key === "ArrowRight") {
+      e.preventDefault();
+      goNext();
+    }
+  });
+
+  let touchStartX = 0;
+  viewport.addEventListener(
+    "touchstart",
+    (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    },
+    { passive: true },
+  );
+  viewport.addEventListener(
+    "touchend",
+    (e) => {
+      const dx = e.changedTouches[0].screenX - touchStartX;
+      if (Math.abs(dx) > 50) {
+        if (dx > 0) goPrev();
+        else goNext();
+      }
+    },
+    { passive: true },
+  );
+
+  const scheduleLayout = () => requestAnimationFrame(() => requestAnimationFrame(layout));
+  scheduleLayout();
+  window.addEventListener("resize", scheduleLayout);
+
+  if (typeof ResizeObserver !== "undefined") {
+    let t;
+    const ro = new ResizeObserver(() => {
+      clearTimeout(t);
+      t = setTimeout(layout, 60);
+    });
+    ro.observe(viewport);
+  }
+
+  const revealMo = new MutationObserver(() => {
+    if (root.classList.contains("is-visible")) {
+      scheduleLayout();
+    }
+  });
+  revealMo.observe(root, { attributes: true, attributeFilter: ["class"] });
+
+  reduceMotion.addEventListener("change", () => {
+    setTransitionOn(!reduceMotion.matches);
+  });
+})();
