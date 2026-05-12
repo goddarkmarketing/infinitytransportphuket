@@ -64,19 +64,28 @@ if (footerYear) {
   footerYear.textContent = String(new Date().getFullYear());
 }
 
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.15 },
-);
+const revealElements = document.querySelectorAll(".reveal");
 
-document.querySelectorAll(".reveal").forEach((element) => observer.observe(element));
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { rootMargin: "0px 0px -5% 0px", threshold: 0.01 },
+  );
+
+  revealElements.forEach((element) => {
+    element.classList.add("is-visible");
+    observer.observe(element);
+  });
+} else {
+  revealElements.forEach((element) => element.classList.add("is-visible"));
+}
 
 const carButtons = document.querySelectorAll("[data-car-option]");
 const selectedCarText = document.querySelector("#selected-car-text");

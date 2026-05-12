@@ -65,6 +65,7 @@ a {
 img {
   display: block;
   width: 100%;
+  height: auto;
 }
 
 /* โลโก้เฮดเดอร์: ชนะ width:100% ของ img และคงสัดส่วน 1:1 ไม่ให้วงกลมถูกบีบเป็นรี */
@@ -812,11 +813,14 @@ p {
 }
 
 .article-cover {
+  display: block;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: clamp(190px, 18vw, 235px);
   object-fit: cover;
+  object-position: center;
   border-radius: 12px;
   margin-bottom: 12px;
+  background: #f2ece4;
 }
 
 .article-readmore {
@@ -961,11 +965,36 @@ p {
 }
 
 .article-section-image {
+  display: block;
   width: 100%;
+  height: auto;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 14px;
   margin: 10px 0 14px;
+  background: #f2ece4;
+}
+
+.article-photo {
+  margin: 12px 0 16px;
+}
+
+.article-photo .article-section-image {
+  margin: 0;
+}
+
+.article-photo figcaption {
+  margin-top: 6px;
+  color: #77674f;
+  font-family: var(--font-detail);
+  font-size: 0.68rem;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.article-photo figcaption a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .article-single {
@@ -3444,8 +3473,8 @@ a.contact-channel:focus-visible {
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(22px);
+  opacity: 1;
+  transform: none;
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
@@ -3633,6 +3662,14 @@ textarea {
 }
 
 @media (max-width: 760px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .article-cover {
+    height: clamp(190px, 56vw, 260px);
+  }
+
   .brand {
     gap: 10px;
     font-size: clamp(0.52rem, 2.85vw, 1.05rem);
