@@ -938,8 +938,8 @@ if (contactForm) {
   const statusEl = contactForm.querySelector("[data-contact-status]");
   const submitBtn = contactForm.querySelector("[data-contact-submit]");
   const honeyField = contactForm.querySelector('[name="_honey"]');
-  const notifyEmail = "goddarkmarketing@gmail.com";
-  const formEndpoint = `https://formsubmit.co/ajax/${encodeURIComponent(notifyEmail)}`;
+  const contactConfig = window.CONTACT_FORM_CONFIG || {};
+  const web3formsAccessKey = (contactConfig.web3formsAccessKey || "").trim();
 
   const t = (key) => window.SITE_I18N?.t?.(key) || "";
 
@@ -971,32 +971,49 @@ if (contactForm) {
     if (submitBtn) submitBtn.disabled = true;
     setStatus(t("contact.form.sending"), "loading");
 
-    const payload = {
-      _subject: `จองรถ Infinity Transport — ${name}`,
-      _template: "table",
-      _captcha: "false",
-      name,
-      phone,
-      date: date || "-",
-      car,
-      message: detail,
-    };
+    const fields = { name, phone, date, car, detail };
 
     try {
-      const response = await fetch(formEndpoint, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(payload),
-      });
+      let sent = false;
 
-      const result = await response.json().catch(() => ({}));
+      if (web3formsAccessKey) {
+        const wRes = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify({
+            access_key: web3formsAccessKey,
+            subject: `จองรถ Infinity Transport — ${name}`,
+            from_name: name,
+            name,
+            phone,
+            date: date || "-",
+            car: car || "-",
+            message: detail,
+          }),
+        });
+        const wData = await wRes.json().catch(() => ({}));
+        sent = wRes.ok && wData.success === true;
+      } else {
+        const formData = new FormData();
+        formData.append("name", name);
+        formData.append("phone", phone);
+        formData.append("date", date);
+        formData.append("car", car);
+        formData.append("detail", detail);
+        try {
+          const pRes = await fetch("./contact-submit.php", { method: "POST", body: formData });
+          const pData = await pRes.json().catch(() => ({}));
+          sent = pRes.ok && pData.success === true;
+        } catch {
+          sent = false;
+        }
+      }
 
-      if (response.ok && result.success) {
+      if (sent) {
         contactForm.reset();
         setStatus(t("contact.form.success"), "success");
+      } else if (!web3formsAccessKey) {
+        setStatus(t("contact.form.error_setup"), "error");
       } else {
         setStatus(t("contact.form.error"), "error");
       }

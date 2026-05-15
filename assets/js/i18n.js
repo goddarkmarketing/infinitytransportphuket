@@ -303,6 +303,10 @@
       th: "ส่งไม่สำเร็จ กรุณาลองอีกครั้ง หรือติดต่อทาง LINE / โทรศัพท์",
       en: "Could not send. Please try again or contact us via LINE / phone.",
     },
+    "contact.form.error_setup": {
+      th: "ระบบส่งอีเมลยังไม่พร้อม กรุณาติดต่อทาง LINE / โทรศัพท์ หรือแจ้งทีมดูแลเว็บ",
+      en: "Email delivery is not configured yet. Please contact us via LINE / phone.",
+    },
     "contact.direct.eyebrow": { th: "Direct Contact", en: "Direct contact" },
     "contact.direct.h2": { th: "ติดต่อด่วน", en: "Quick contact" },
     "contact.phone_label": { th: "โทรศัพท์", en: "Phone" },
