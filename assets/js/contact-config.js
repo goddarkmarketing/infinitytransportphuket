@@ -4,6 +4,6 @@
  * 2) PHP: ถ้าเว็บรองรับ PHP จะใช้ contact-submit.php อัตโนมัติเมื่อไม่มี access key
  */
 window.CONTACT_FORM_CONFIG = {
-  notifyEmail: "goddarkmarketing@gmail.com",
+  notifyEmail: "p.p.thavonwong@gmail.com",
   web3formsAccessKey: "fff9f465-73ff-4e42-aef2-f848b201aa35",
 };

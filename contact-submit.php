@@ -30,7 +30,7 @@ if (!empty($input['_honey'] ?? '')) {
     exit;
 }
 
-$notifyEmail = 'goddarkmarketing@gmail.com';
+$notifyEmail = 'p.p.thavonwong@gmail.com';
 
 $name = trim((string) ($input['name'] ?? ''));
 $phone = trim((string) ($input['phone'] ?? ''));
