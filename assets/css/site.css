@@ -3489,6 +3489,38 @@ a.contact-channel:focus-visible {
   gap: 14px;
 }
 
+.form-honey {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.form-status {
+  margin: 12px 0 0;
+  font-family: var(--font-detail);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.form-status[data-state="success"] {
+  color: #2d6a3f;
+}
+
+.form-status[data-state="error"] {
+  color: #8b2e2e;
+}
+
+.form-status[data-state="loading"] {
+  color: #6b5a38;
+}
+
+.form-status[hidden] {
+  display: none;
+}
+
 input,
 select,
 textarea {

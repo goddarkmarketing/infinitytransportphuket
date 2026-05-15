@@ -42,14 +42,15 @@
       <div class="panel reveal">
         <div class="eyebrow" data-i18n="contact.form.eyebrow">Booking Form</div>
         <h2 class="site-page-title" data-i18n="contact.form.h2">แจ้งรายละเอียด เราติดต่อกลับทันที</h2>
-        <form class="form-grid">
+        <form class="form-grid" data-contact-form novalidate>
+          <input type="text" name="_honey" class="form-honey" tabindex="-1" autocomplete="off" aria-hidden="true">
           <div>
             <label for="name" data-i18n="contact.form.name">ชื่อผู้จอง</label>
-            <input id="name" name="name" placeholder="ชื่อ-นามสกุล" data-i18n-placeholder="contact.form.name_ph">
+            <input id="name" name="name" required placeholder="ชื่อ-นามสกุล" data-i18n-placeholder="contact.form.name_ph">
           </div>
           <div>
             <label for="phone" data-i18n="contact.form.phone">เบอร์ติดต่อ</label>
-            <input id="phone" name="phone" placeholder="+66...">
+            <input id="phone" name="phone" type="tel" required placeholder="+66...">
           </div>
           <div>
             <label for="date" data-i18n="contact.form.date">วันที่ใช้งาน</label>
@@ -57,20 +58,21 @@
           </div>
           <div>
             <label for="car" data-i18n="contact.form.car">ประเภทรถ</label>
-            <select id="car" name="car">
+            <select id="car" name="car" required>
               <option>SUV</option>
               <option>Toyota All New</option>
               <option>Toyota Alphard</option>
               <option>Mercedes-Benz</option>
-              <option>Sprinter</option>
+              <option>Mercedes-Benz Sprinter</option>
             </select>
           </div>
           <div class="span-2">
             <label for="detail" data-i18n="contact.form.detail">รายละเอียดเส้นทาง</label>
-            <textarea id="detail" name="detail" placeholder="จุดรับ จุดส่ง เวลา จำนวนผู้โดยสาร และความต้องการเพิ่มเติม" data-i18n-placeholder="contact.form.detail_ph"></textarea>
+            <textarea id="detail" name="detail" required placeholder="จุดรับ จุดส่ง เวลา จำนวนผู้โดยสาร และความต้องการเพิ่มเติม" data-i18n-placeholder="contact.form.detail_ph"></textarea>
           </div>
           <div class="span-2">
-            <button class="btn btn-gold" type="button" data-i18n="contact.form.submit">ส่งคำขอจองรถ</button>
+            <button class="btn btn-gold" type="submit" data-contact-submit data-i18n="contact.form.submit">ส่งคำขอจองรถ</button>
+            <p class="form-status" data-contact-status hidden role="status" aria-live="polite"></p>
           </div>
         </form>
       </div>

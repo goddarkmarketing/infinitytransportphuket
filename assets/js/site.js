@@ -931,3 +931,79 @@ if (carButtons.length && selectedCarText && selectedCarBookLink) {
     setTransitionOn(!reduceMotion.matches);
   });
 })();
+
+const contactForm = document.querySelector("[data-contact-form]");
+
+if (contactForm) {
+  const statusEl = contactForm.querySelector("[data-contact-status]");
+  const submitBtn = contactForm.querySelector("[data-contact-submit]");
+  const honeyField = contactForm.querySelector('[name="_honey"]');
+  const notifyEmail = "goddarkmarketing@gmail.com";
+  const formEndpoint = `https://formsubmit.co/ajax/${encodeURIComponent(notifyEmail)}`;
+
+  const t = (key) => window.SITE_I18N?.t?.(key) || "";
+
+  const setStatus = (message, state) => {
+    if (!statusEl) return;
+    if (!message) {
+      statusEl.hidden = true;
+      statusEl.textContent = "";
+      statusEl.removeAttribute("data-state");
+      return;
+    }
+    statusEl.hidden = false;
+    statusEl.textContent = message;
+    statusEl.dataset.state = state;
+  };
+
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    if (honeyField?.value) return;
+    if (!contactForm.reportValidity()) return;
+
+    const name = contactForm.querySelector('[name="name"]')?.value?.trim() || "";
+    const phone = contactForm.querySelector('[name="phone"]')?.value?.trim() || "";
+    const date = contactForm.querySelector('[name="date"]')?.value || "";
+    const car = contactForm.querySelector('[name="car"]')?.value || "";
+    const detail = contactForm.querySelector('[name="detail"]')?.value?.trim() || "";
+
+    if (submitBtn) submitBtn.disabled = true;
+    setStatus(t("contact.form.sending"), "loading");
+
+    const payload = {
+      _subject: `จองรถ Infinity Transport — ${name}`,
+      _template: "table",
+      _captcha: "false",
+      name,
+      phone,
+      date: date || "-",
+      car,
+      message: detail,
+    };
+
+    try {
+      const response = await fetch(formEndpoint, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const result = await response.json().catch(() => ({}));
+
+      if (response.ok && result.success) {
+        contactForm.reset();
+        setStatus(t("contact.form.success"), "success");
+      } else {
+        setStatus(t("contact.form.error"), "error");
+      }
+    } catch {
+      setStatus(t("contact.form.error"), "error");
+    } finally {
+      if (submitBtn) submitBtn.disabled = false;
+    }
+  });
+}

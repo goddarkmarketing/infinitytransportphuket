@@ -294,6 +294,15 @@
       en: "Pickup, drop-off, time, passengers, special requests",
     },
     "contact.form.submit": { th: "ส่งคำขอจองรถ", en: "Send booking request" },
+    "contact.form.sending": { th: "กำลังส่งข้อมูล...", en: "Sending..." },
+    "contact.form.success": {
+      th: "ส่งคำขอเรียบร้อยแล้ว ทีมงานจะติดต่อกลับโดยเร็วที่สุด",
+      en: "Request sent. Our team will contact you shortly.",
+    },
+    "contact.form.error": {
+      th: "ส่งไม่สำเร็จ กรุณาลองอีกครั้ง หรือติดต่อทาง LINE / โทรศัพท์",
+      en: "Could not send. Please try again or contact us via LINE / phone.",
+    },
     "contact.direct.eyebrow": { th: "Direct Contact", en: "Direct contact" },
     "contact.direct.h2": { th: "ติดต่อด่วน", en: "Quick contact" },
     "contact.phone_label": { th: "โทรศัพท์", en: "Phone" },
