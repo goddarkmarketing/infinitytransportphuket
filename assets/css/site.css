@@ -330,12 +330,51 @@ h2 {
   color: #231b10;
 }
 
+h1.site-page-title,
 h2.site-page-title {
+  font-family: var(--font-heading);
+  font-size: var(--section-title-size);
+  line-height: 1.2;
+  color: #231b10;
+  margin: 0;
   white-space: nowrap;
   letter-spacing: -0.025em;
 }
 
+.articles-page-head {
+  max-width: none;
+}
+
+.articles-page-title.site-page-title {
+  font-size: clamp(1.45rem, 2.3vw, 2.2rem);
+  color: #1a140c;
+  line-height: 1.2;
+}
+
+.articles-page-lead {
+  margin: 6px 0 0;
+  font-family: var(--font-detail);
+  font-size: clamp(0.6rem, 1.18vw, 0.98rem);
+  color: var(--muted);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+@media (max-width: 880px) {
+  .articles-page-lead {
+    white-space: normal;
+    font-size: 0.95rem;
+  }
+
+  .articles-page-title.site-page-title {
+    font-size: clamp(1.3rem, 4.6vw, 1.85rem);
+  }
+}
+
 @media (max-width: 480px) {
+  h1.site-page-title,
   h2.site-page-title {
     white-space: normal;
   }
@@ -902,6 +941,7 @@ p {
   margin: 0 0 28px;
 }
 
+.article-section h2,
 .article-section h3 {
   margin: 0 0 10px;
   color: #231b10;
@@ -930,6 +970,7 @@ p {
   line-height: 1.75;
 }
 
+.article-prose h3,
 .article-prose h4 {
   margin: 14px 0 8px;
   color: #231b10;
@@ -4307,6 +4348,7 @@ body.about-page {
     line-height: 1.24;
   }
 
+  h1.site-page-title,
   h2.site-page-title {
     white-space: normal;
   }
