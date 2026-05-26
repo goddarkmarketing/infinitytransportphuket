@@ -18,11 +18,20 @@
     "nav.articles": { th: "บทความ", en: "Articles" },
     "nav.cta": { th: "จองรถทันที", en: "Book now" },
 
-    "meta.title.index": { th: "Infinity Transport Phuket | รถพร้อมคนขับภูเก็ต", en: "Infinity Transport Phuket | Chauffeur service" },
+    "meta.title.index": {
+      th: "รถตู้พร้อมคนขับภูเก็ต | รถตู้ VIP | Infinity Transport",
+      en: "Van with Driver Phuket | VIP Van | Infinity Transport",
+    },
     "meta.title.about": { th: "เกี่ยวกับเรา | Infinity Transport Phuket", en: "About us | Infinity Transport Phuket" },
     "meta.title.contact": { th: "ติดต่อและจองรถ | Infinity Transport Phuket", en: "Contact & booking | Infinity Transport Phuket" },
-    "meta.title.services": { th: "บริการของเรา | Infinity Transport Phuket", en: "Our services | Infinity Transport Phuket" },
-    "meta.title.fleet": { th: "รถทั้งหมด | Infinity Transport Phuket", en: "Fleet | Infinity Transport Phuket" },
+    "meta.title.services": {
+      th: "รถตู้พร้อมคนขับภูเก็ต | บริการรถตู้ VIP",
+      en: "Van with Driver Phuket | VIP Van Service",
+    },
+    "meta.title.fleet": {
+      th: "รถตู้พร้อมคนขับภูเก็ต | รถตู้ VIP | Infinity Transport",
+      en: "Van with Driver Phuket | VIP Van Fleet",
+    },
     "meta.title.pricing": { th: "ราคาและแพ็กเกจ | Infinity Transport Phuket", en: "Rates & packages | Infinity Transport Phuket" },
     "meta.title.reviews": { th: "รีวิวลูกค้า | Infinity Transport Phuket", en: "Customer reviews | Infinity Transport Phuket" },
     "meta.title.articles": { th: "บทความท่องเที่ยว | Infinity Transport Phuket", en: "Travel articles | Infinity Transport Phuket" },
@@ -98,10 +107,13 @@
     "reviews.dot_go": { th: "ไปที่ตำแหน่งสไลด์ {n}", en: "Go to slide position {n}" },
 
     "index.hero.eyebrow": { th: "Phuket Premium Transport", en: "Phuket Premium Transport" },
-    "index.hero.h1": { th: "รถพร้อมคนขับในภูเก็ต\nตรงเวลา สุภาพ และพร้อมดูแล 24/7", en: "Chauffeur service in Phuket\nPunctual, courteous care 24/7" },
+    "index.hero.h1": {
+      th: "รถตู้พร้อมคนขับภูเก็ต\nตรงเวลา สุภาพ และพร้อมดูแล 24/7",
+      en: "Van with driver in Phuket\nPunctual, courteous care 24/7",
+    },
     "index.hero.p": {
-      th: "เหมาะสำหรับรับส่งสนามบิน ทริปท่องเที่ยว งานธุรกิจ และงานสำคัญ พร้อมรถหลากหลายประเภท ตั้งแต่ SUV จนถึงรถตู้หมู่คณะ",
-      en: "Airport runs, tours, business, and special occasions — from SUVs to large vans.",
+      th: "รถตู้พร้อมคนขับ VIP ภูเก็ต รับส่งสนามบิน เหมาเที่ยว งานธุรกิจ และหมู่คณะ — ตั้งแต่ SUV ถึงรถตู้ใหญ่",
+      en: "VIP van with driver in Phuket — airport runs, tours, business, and groups from SUVs to large vans.",
     },
     "index.hero.book": { th: "จองรถตอนนี้", en: "Book now" },
     "index.hero.fleet": { th: "ดูรถทั้งหมด", en: "View fleet" },
@@ -112,8 +124,11 @@
     "index.pop.airport.p": { th: "บริการตรงเวลา พร้อมป้ายชื่อผู้โดยสารและช่วยดูแลสัมภาระ", en: "On time, name sign, and luggage help." },
     "index.pop.daily.h": { th: "เหมาเที่ยวรายวัน", en: "Daily charter" },
     "index.pop.daily.p": { th: "วางแผนเส้นทางยืดหยุ่น เที่ยวครบตามเวลาที่คุณต้องการ", en: "Flexible routing within your schedule." },
-    "index.pop.vip.h": { th: "รถ VIP", en: "VIP vehicles" },
-    "index.pop.vip.p": { th: "เหมาะกับรับแขกคนสำคัญ งานธุรกิจ และโอกาสพิเศษ", en: "VIP guests, business, and special events." },
+    "index.pop.vip.h": { th: "รถตู้ VIP ภูเก็ต", en: "VIP van Phuket" },
+    "index.pop.vip.p": {
+      th: "รถตู้พร้อมคนขับ VIP สำหรับรับแขกสำคัญ งานธุรกิจ และโอกาสพิเศษ",
+      en: "VIP van with driver for guests, business, and special events.",
+    },
     "index.pop.group.h": { th: "รถหมู่คณะ", en: "Group transport" },
     "index.pop.group.p": { th: "รองรับทริปครอบครัว ทีมงาน และกรุ๊ปทัวร์อย่างสะดวกสบาย", en: "Comfortable for families, teams, and tours." },
 
@@ -138,8 +153,8 @@
       en: "Why book a chauffeured van with Infinity Transport Phuket",
     },
     "index.album.lead": {
-      th: "รถตู้และรถหรูพร้อมคนขับมืออาชีพในภูเก็ต เน้นความปลอดภัย ตรงเวลา และบริการที่เป็นกันเองตลอดเส้นทาง",
-      en: "Premium vans and chauffeured cars in Phuket — safe, on time, and genuinely welcoming from pickup to drop-off.",
+      th: "บริการรถตู้พร้อมคนขับภูเก็ต รถตู้ VIP ภูเก็ต และรถตู้พร้อมคนขับ VIP เน้นความปลอดภัย ตรงเวลา และบริการเป็นกันเองตลอดเส้นทาง",
+      en: "Van with driver Phuket, VIP van Phuket, and VIP van with driver — safe, on time, and welcoming from pickup to drop-off.",
     },
     "index.album.point1": {
       th: "คนขับมืออาชีพ สุภาพ ชำนาญเส้นทางในภูเก็ตและสนามบิน",
