@@ -743,6 +743,53 @@ p {
   background: linear-gradient(180deg, rgba(255, 249, 238, 0.4) 0%, transparent 100%);
 }
 
+/* Google reviews block on reviews.html (light page background) */
+.reviews-page-google-carousel .greviews-grade {
+  color: var(--ink);
+}
+
+.reviews-page-google-carousel .greviews-count {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.reviews-page-google-carousel .greviews-maps-cta {
+  color: var(--gold-deep);
+}
+
+.reviews-page-google-carousel .greviews-maps-cta:hover {
+  color: var(--ink);
+}
+
+.reviews-page-google-carousel .greviews-footnote {
+  color: var(--muted);
+}
+
+.reviews-page-google-carousel .greviews-arrow {
+  color: var(--ink);
+  border-color: var(--line);
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.reviews-page-google-carousel .greviews-arrow:hover {
+  color: var(--gold-deep);
+  border-color: rgba(212, 175, 55, 0.45);
+  background: #fff;
+}
+
+.reviews-page-google-carousel .greviews-stars--lg .greviews-star {
+  text-shadow: none;
+}
+
+.reviews-page-google-carousel .reviews-google-cta {
+  margin-top: 28px;
+  margin-bottom: 0;
+}
+
+.reviews-page-google-carousel .greviews-panel {
+  margin-top: 0;
+}
+
 .reviews-google-cta {
   display: flex;
   flex-wrap: wrap;
@@ -2060,11 +2107,11 @@ p {
   transform: scale(1.15);
 }
 
-/* Google-style text reviews (mockup — replace with API/embed later) */
+/* Google Business Profile reviews (live via Places API) */
 .greviews-panel {
   --greviews-per-view: 3;
   --greviews-gap: 16px;
-  margin-top: 40px;
+  margin-top: 8px;
   padding: 12px 0 0;
   background: transparent;
   border: none;
@@ -2102,6 +2149,56 @@ p {
     width: 100%;
     max-width: 520px;
   }
+}
+
+.greviews-source-badge {
+  margin: 0;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-family: var(--font-detail);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  background: linear-gradient(90deg, #e8f0fe, #fef7e0);
+  border: 1px solid rgba(66, 133, 244, 0.35);
+}
+
+.greviews-maps-cta {
+  margin-top: 4px;
+  font-family: var(--font-detail);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #8ec5ff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.greviews-maps-cta:hover {
+  color: #fff1c6;
+}
+
+.greviews-footnote {
+  grid-column: 1 / -1;
+  margin: 0;
+  text-align: center;
+  font-family: var(--font-detail);
+  font-size: 0.75rem;
+  color: rgba(247, 235, 200, 0.55);
+}
+
+.is-google-live .greviews-card {
+  border-color: rgba(66, 133, 244, 0.22);
+}
+
+.reviews-photos-label {
+  margin: 36px 0 12px;
+  font-family: var(--font-detail);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(247, 235, 200, 0.65);
+  text-align: center;
 }
 
 .greviews-summary {
@@ -2217,6 +2314,40 @@ p {
   gap: 10px;
   align-items: start;
   margin-bottom: 10px;
+}
+
+.greviews-avatar--photo {
+  padding: 0;
+  overflow: hidden;
+  background: #fff;
+}
+
+.greviews-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.greviews-posted {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #4285f4;
+  letter-spacing: 0.02em;
+}
+
+.greviews-view-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #4285f4;
+  text-decoration: none;
+}
+
+.greviews-view-link:hover {
+  text-decoration: underline;
 }
 
 .greviews-avatar {

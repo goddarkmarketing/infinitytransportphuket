@@ -3,3 +3,7 @@ _lk3_font_repo/
 
 Thumbs.db
 .DS_Store
+
+# Google Places API key
+google-reviews-config.local.php
+assets/cache/

@@ -49,8 +49,8 @@
       </div>
       <ul class="reviews-stats reveal" data-i18n-aria="reviews.stats_aria" aria-label="สรุปความน่าเชื่อถือ">
         <li class="reviews-stats__item">
-          <strong class="reviews-stats__num">5.0</strong>
-          <span class="reviews-stats__label" data-i18n="reviews.stats_l1">คะแนนเฉลี่ยจากรีวิวออนไลน์</span>
+          <strong class="reviews-stats__num" data-google-rating-value>5.0</strong>
+          <span class="reviews-stats__label" data-i18n="reviews.stats_l1" data-google-review-count>คะแนนเฉลี่ยจากรีวิวออนไลน์</span>
         </li>
         <li class="reviews-stats__item">
           <strong class="reviews-stats__num">24/7</strong>
@@ -88,51 +88,35 @@
     </div>
   </section>
 
-  <section class="section section--tight">
-    <div class="container">
-      <div class="section-head reveal">
-        <div class="eyebrow" data-i18n="reviews.testimonials.eyebrow">Testimonials</div>
-        <h2 class="site-page-title" data-i18n="reviews.testimonials.h2">ข้อความรีวิวจากลูกค้า</h2>
-        <p class="reviews-intro reviews-intro--muted" data-i18n="reviews.testimonials.p">ตัวอย่างข้อความจากผู้โดยสาร (บางส่วนแสดงเป็นภาษาอังกฤษตามรีวิวจริง)</p>
-      </div>
-      <div class="grid-3">
-        <article class="panel reveal reviews-quote">
-          <p class="reviews-quote__text">“Frank our chauffeur is very responsible, safe, and warm. We had a great time — airport pickup was flawless.”</p>
-          <p class="reviews-quote__meta">— Joel C. · ธ.ค. 2023</p>
-        </article>
-        <article class="panel reveal reviews-quote">
-          <p class="reviews-quote__text">“Excellent service from airport to hotel. Driver on time, van spotless. Would book again for our next Phuket trip.”</p>
-          <p class="reviews-quote__meta">— Ann G. · ม.ค. 2024</p>
-        </article>
-        <article class="panel reveal reviews-quote">
-          <p class="reviews-quote__text">“บริการดีมาก คนขับสุภาพ รถสะอาด ตรงเวลาทุกจุด ครอบครัวประทับใจตลอดทริปภูเก็ตค่ะ”</p>
-          <p class="reviews-quote__meta">— คุณสมหญิง · มี.ค. 2024</p>
-        </article>
-        <article class="panel reveal reviews-quote">
-          <p class="reviews-quote__text">“Professional team and clean vehicles. Day trip was well organised and the driver spoke good English.”</p>
-          <p class="reviews-quote__meta">— Harry W. · ก.พ. 2024</p>
-        </article>
-        <article class="panel reveal reviews-quote">
-          <p class="reviews-quote__text">“จองผ่านไลน์ตอบไว แจ้งเที่ยวบินแล้วรอรับหน้าประตูได้เลย ประทับใจมากครับ”</p>
-          <p class="reviews-quote__meta">— คุณมาย · พ.ค. 2024</p>
-        </article>
-        <article class="panel reveal reviews-quote">
-          <p class="reviews-quote__text">“Smooth transfer for family of six. Child seats ready and fair pricing — great value in Phuket.”</p>
-          <p class="reviews-quote__meta">— David K. · เม.ย. 2024</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="section reviews-page-google section--tight">
+  <section class="section section--tight reviews-page-google-carousel">
     <div class="container">
       <div class="section-head reveal">
         <div class="eyebrow" data-i18n="reviews.google.eyebrow">Google</div>
-        <h2 class="site-page-title" data-i18n="reviews.google.h2">รีวิวเพิ่มเติมบน Google</h2>
-        <p class="reviews-intro" data-i18n="reviews.google.p">อ่านบทวิจารณ์ล่าสุดและคะแนนจาก Google Business Profile ของเราได้โดยตรงจากลิงก์ด้านล่าง</p>
+        <h2 class="site-page-title" data-i18n="reviews.testimonials.h2">รีวิวจาก Google</h2>
+      </div>
+      <div class="greviews-panel reveal is-google-live" data-greviews-carousel data-google-reviews-panel>
+        <div class="greviews-summary">
+          <p class="greviews-source-badge" data-i18n="index.greviews.badge">รีวิวจาก Google</p>
+          <p class="greviews-grade" data-i18n="index.greviews.grade">ยอดเยี่ยม</p>
+          <div class="greviews-stars greviews-stars--lg" data-i18n-aria="index.greviews.stars_aria" aria-label="คะแนน 5 จาก 5">
+            <span class="greviews-star" aria-hidden="true">★</span><span class="greviews-star" aria-hidden="true">★</span><span class="greviews-star" aria-hidden="true">★</span><span class="greviews-star" aria-hidden="true">★</span><span class="greviews-star" aria-hidden="true">★</span>
+          </div>
+          <p class="greviews-count" data-google-review-count>อ้างอิงจาก Google</p>
+          <p class="greviews-google-brand" aria-hidden="true">
+            <span class="greviews-gw greviews-gw--g">G</span><span class="greviews-gw greviews-gw--o1">o</span><span class="greviews-gw greviews-gw--o2">o</span><span class="greviews-gw greviews-gw--g2">g</span><span class="greviews-gw greviews-gw--l">l</span><span class="greviews-gw greviews-gw--e">e</span>
+          </p>
+          <a class="greviews-maps-cta" href="https://www.google.com/maps/place/?q=place_id:ChIJhdE-OgAvUDARWk7AksPaaBk" target="_blank" rel="noopener noreferrer" data-google-reviews-link data-i18n="index.greviews.maps_cta">ดูรีวิวทั้งหมดบน Google Maps</a>
+        </div>
+        <div class="greviews-carousel">
+          <button class="greviews-arrow greviews-arrow--prev" type="button" data-greviews-prev data-i18n-aria="index.greviews.prev" aria-label="รีวิวก่อนหน้า">‹</button>
+          <div class="greviews-viewport" data-greviews-viewport>
+            <div class="greviews-track" data-greviews-track aria-busy="true"></div>
+          </div>
+          <button class="greviews-arrow greviews-arrow--next" type="button" data-greviews-next data-i18n-aria="index.greviews.next" aria-label="รีวิวถัดไป">›</button>
+        </div>
       </div>
       <div class="reviews-google-cta reveal">
-        <a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&amp;query=Infinity+Transport+Phuket" target="_blank" rel="noopener noreferrer" data-i18n="reviews.google.btn">เปิด Google Maps / รีวิว</a>
+        <a class="btn btn-gold" href="https://www.google.com/maps/place/?q=place_id:ChIJhdE-OgAvUDARWk7AksPaaBk" target="_blank" rel="noopener noreferrer" data-google-reviews-link data-i18n="reviews.google.btn">เปิด Google Maps / รีวิว</a>
         <a class="btn btn-dark" href="./contact.html">จองรถกับเรา</a>
       </div>
     </div>
@@ -214,7 +198,7 @@
             </li>
           </ul>
           <p class="site-footer__maps">
-            <a href="https://www.google.com/maps/search/?api=1&amp;query=Infinity+Transport+Phuket" target="_blank" rel="noopener noreferrer" data-i18n="footer.maps">ดูบน Google Maps</a>
+            <a href="https://www.google.com/maps/place/?q=place_id:ChIJhdE-OgAvUDARWk7AksPaaBk" target="_blank" rel="noopener noreferrer" data-google-reviews-link data-i18n="footer.maps">ดูบน Google Maps</a>
           </p>
         </div>
       </div>
@@ -263,6 +247,7 @@
     </button>
   </div>
   <script src="./assets/js/i18n.js"></script>
+  <script src="./assets/js/google-reviews.js"></script>
   <script src="./assets/js/site.js"></script>
 </body>
 </html>

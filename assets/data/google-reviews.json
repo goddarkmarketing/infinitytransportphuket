@@ -1,0 +1,86 @@
+{
+    "ok": true,
+    "source": "google-places-api",
+    "placeId": "ChIJhdE-OgAvUDARWk7AksPaaBk",
+    "fetchedAt": "2026-05-27T04:43:57+00:00",
+    "place": {
+        "name": "Infinity Transport & Travel Phuket",
+        "rating": 5,
+        "userRatingCount": 7,
+        "googleMapsUri": "https:\/\/maps.google.com\/?cid=1830953782041661018&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYASAA",
+        "gradeTh": "ยอดเยี่ยม",
+        "gradeEn": "Excellent"
+    },
+    "reviews": [
+        {
+            "author": "Svetlana Mitrakhovich",
+            "initials": "SM",
+            "photoUri": "https:\/\/lh3.googleusercontent.com\/a-\/ALV-UjVNfotrxafeS0g0y1keFkO38wJ8hFlwwb2d-MyX4PXhMaGWq0SO=s128-c0x00000000-cc-rp-mo-ba4",
+            "rating": 5,
+            "text": "I have rented a bike and booked and my traveling tours around the island through this company. Very very happy! Very nice lady and give the best price!\nI definitely recommend!!",
+            "snippet": "I have rented a bike and booked and my traveling tours around the island through this company. Very very happy! Very nice lady and give the…",
+            "publishedAt": "2026-03-05T01:26:13.169251173Z",
+            "dateTh": "5 มี.ค. 2569",
+            "dateEn": "Mar 5, 2026",
+            "relativeTime": "2 months ago",
+            "googleMapsUri": "https:\/\/www.google.com\/maps\/reviews\/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2s1MVZXWkZia2xKV1dSbVJGWjZUekYxWjJabVJXYxAB!2m1!1s0x30502f003a3ed185:0x1968dac392c04e5a",
+            "avatarClass": "greviews-avatar--a"
+        },
+        {
+            "author": "Gregory Boyd",
+            "initials": "GB",
+            "photoUri": "https:\/\/lh3.googleusercontent.com\/a-\/ALV-UjUOiy4kc2Wqc9jQAGE5f5Ei8S4lOmeoWr-ZjFCkXfWKP8VaLmPI-g=s128-c0x00000000-cc-rp-mo",
+            "rating": 5,
+            "text": "As a regular customer for 1.5 years now, I highly recommend Infinity Transport. I have done long and short term automobile rentals, motorbike rentals, airport transfers, daily van hires, and I have had positive experiences every time. Thank you, Pure, for your ongoing service!",
+            "snippet": "As a regular customer for 1.5 years now, I highly recommend Infinity Transport. I have done long and short term automobile rentals, motorbi…",
+            "publishedAt": "2025-11-18T05:33:55.281884853Z",
+            "dateTh": "18 พ.ย. 2568",
+            "dateEn": "Nov 18, 2025",
+            "relativeTime": "6 months ago",
+            "googleMapsUri": "https:\/\/www.google.com\/maps\/reviews\/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xndE9ERkJRamwyVUV4NWFuVndUWEJRZHpkd2FGRRAB!2m1!1s0x30502f003a3ed185:0x1968dac392c04e5a",
+            "avatarClass": "greviews-avatar--b"
+        },
+        {
+            "author": "Rahyan Boularbi",
+            "initials": "RB",
+            "photoUri": "https:\/\/lh3.googleusercontent.com\/a-\/ALV-UjXC_8P8VL3hqtZa2RGtQluIK9CtbJi0peWDFRYhZv5w0raMmmQ=s128-c0x00000000-cc-rp-mo-ba2",
+            "rating": 5,
+            "text": "The owner is very accommodating, the prices are very reasonable, and the scooters are always well maintained. I always go through this shop for rentals because the scooters are very well equipped. I 100% recommend it.",
+            "snippet": "The owner is very accommodating, the prices are very reasonable, and the scooters are always well maintained. I always go through this shop…",
+            "publishedAt": "2025-11-17T06:37:37.559010060Z",
+            "dateTh": "17 พ.ย. 2568",
+            "dateEn": "Nov 17, 2025",
+            "relativeTime": "6 months ago",
+            "googleMapsUri": "https:\/\/www.google.com\/maps\/reviews\/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21kWk1EUnJTRmxRU25SbFN6ZHZXRVJLVlRORmJFRRAB!2m1!1s0x30502f003a3ed185:0x1968dac392c04e5a",
+            "avatarClass": "greviews-avatar--c"
+        },
+        {
+            "author": "Pao Morales",
+            "initials": "PM",
+            "photoUri": "https:\/\/lh3.googleusercontent.com\/a\/ACg8ocKaniRFIz44Evo40UfrVfw-JrsL-IyNm9li5yYZhE0WtPVUBg=s128-c0x00000000-cc-rp-mo-ba2",
+            "rating": 5,
+            "text": "Punctual team, comfortable van and great driver!! Very smooth trip to Similan",
+            "snippet": "Punctual team, comfortable van and great driver!! Very smooth trip to Similan",
+            "publishedAt": "2025-11-17T10:14:40.818607369Z",
+            "dateTh": "17 พ.ย. 2568",
+            "dateEn": "Nov 17, 2025",
+            "relativeTime": "6 months ago",
+            "googleMapsUri": "https:\/\/www.google.com\/maps\/reviews\/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21ZMVFrdEJhVFo0TFdZek4yTkpORjlDVFRGaWVsRRAB!2m1!1s0x30502f003a3ed185:0x1968dac392c04e5a",
+            "avatarClass": "greviews-avatar--d"
+        },
+        {
+            "author": "Soraya Praew",
+            "initials": "SP",
+            "photoUri": "https:\/\/lh3.googleusercontent.com\/a-\/ALV-UjXRlv4LzxBW1kgb1-Iu0ayIK5uR0T2tx0sEJ8ha3CIn1EyhgO4=s128-c0x00000000-cc-rp-mo-ba3",
+            "rating": 5,
+            "text": "I was impressed with the service. The driver was friendly and the car was good. I will definitely use your service again next time. 😊",
+            "snippet": "I was impressed with the service. The driver was friendly and the car was good. I will definitely use your service again next time. 😊",
+            "publishedAt": "2025-04-27T07:20:54.773205Z",
+            "dateTh": "27 เม.ย. 2568",
+            "dateEn": "Apr 27, 2025",
+            "relativeTime": "a year ago",
+            "googleMapsUri": "https:\/\/www.google.com\/maps\/reviews\/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnTURvMWZPMjFRRRAB!2m1!1s0x30502f003a3ed185:0x1968dac392c04e5a",
+            "avatarClass": "greviews-avatar--e"
+        }
+    ]
+}

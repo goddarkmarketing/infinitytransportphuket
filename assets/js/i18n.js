@@ -187,7 +187,12 @@
     "index.rev.next": { th: "รีวิวถัดไป", en: "Next reviews" },
     "index.greviews.grade": { th: "ยอดเยี่ยม", en: "Excellent" },
     "index.greviews.stars_aria": { th: "คะแนน 5 จาก 5", en: "Rating 5 out of 5" },
-    "index.greviews.count": { th: "อ้างอิงจาก 24 บทวิจารณ์", en: "Based on 24 reviews" },
+    "index.greviews.count": { th: "อ้างอิงจาก Google", en: "Based on Google reviews" },
+    "index.greviews.badge": { th: "รีวิวจาก Google", en: "Google reviews" },
+    "index.greviews.maps_cta": { th: "ดูรีวิวทั้งหมดบน Google Maps", en: "See all reviews on Google Maps" },
+    "index.greviews.posted_on": { th: "รีวิวบน Google", en: "Posted on Google" },
+    "index.greviews.view_on": { th: "ดูบน Google", en: "View on Google" },
+    "index.rev.photos_label": { th: "ภาพรีวิวจากลูกค้า", en: "Customer review photos" },
     "index.greviews.prev": { th: "รีวิวก่อนหน้า", en: "Previous review" },
     "index.greviews.next": { th: "รีวิวถัดไป", en: "Next review" },
 
@@ -345,8 +350,8 @@
     "index.booking.s4p": { th: "รถและคนขับพร้อมให้บริการตรงเวลาแบบมืออาชีพ", en: "Vehicle and driver arrive on time, professionally." },
 
     "index.greviews.footnote": {
-      th: "ข้อมูลตัวอย่างสำหรับแสดงผล — เชื่อมบัญชี Google Business / API ได้ในขั้นตอนถัดไป",
-      en: "Sample display — connect Google Business / API in a later step.",
+      th: "รีวิวดึงจาก Google Business Profile อัปเดตอัตโนมัติ",
+      en: "Reviews loaded from Google Business Profile and updated automatically.",
     },
     "index.greviews.readmore": { th: "อ่านเพิ่มเติม", en: "Read more" },
     "index.greviews.verified_title": { th: "รีวิวที่ยืนยันแล้ว", en: "Verified review" },
@@ -385,8 +390,8 @@
     "reviews.testimonials.eyebrow": { th: "Testimonials", en: "Testimonials" },
     "reviews.testimonials.h2": { th: "ข้อความรีวิวจากลูกค้า", en: "Written testimonials" },
     "reviews.testimonials.p": {
-      th: "ตัวอย่างข้อความจากผู้โดยสาร (บางส่วนแสดงเป็นภาษาอังกฤษตามรีวิวจริง)",
-      en: "Sample guest quotes (some appear in English as in the original reviews).",
+      th: "ดึงจาก Google Business Profile อัปเดตอัตโนมัติ",
+      en: "Loaded from Google Business Profile and updated automatically.",
     },
 
     "line.prefill": { th: "สนใจจองรถรุ่น", en: "I would like to book" },

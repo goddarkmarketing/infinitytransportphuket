@@ -666,6 +666,12 @@ if (carButtons.length && selectedCarText && selectedCarBookLink) {
   });
   revealMo.observe(root, { attributes: true, attributeFilter: ["class"] });
 
+  document.addEventListener("google-reviews:rendered", () => {
+    layoutAttempts = 0;
+    slideIndex = 0;
+    scheduleLayout();
+  });
+
   let touchStartX = 0;
   viewport.addEventListener(
     "touchstart",
