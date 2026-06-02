@@ -210,10 +210,37 @@
     }
   };
 
+  const scheduleLoad = () => {
+    const run = () => load();
+    const target =
+      document.querySelector("[data-greviews-carousel]") ||
+      document.querySelector("#reviews-anchor");
+
+    if (!target || !("IntersectionObserver" in window)) {
+      if ("requestIdleCallback" in window) {
+        requestIdleCallback(run, { timeout: 2500 });
+      } else {
+        setTimeout(run, 1200);
+      }
+      return;
+    }
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          io.disconnect();
+          run();
+        }
+      },
+      { rootMargin: "200px 0px" },
+    );
+    io.observe(target);
+  };
+
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", load);
+    document.addEventListener("DOMContentLoaded", scheduleLoad);
   } else {
-    load();
+    scheduleLoad();
   }
 
   document.addEventListener("i18n:language-changed", load);

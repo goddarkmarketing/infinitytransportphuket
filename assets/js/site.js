@@ -696,6 +696,28 @@ if (carButtons.length && selectedCarText && selectedCarBookLink) {
   const root = document.querySelector("[data-home-album]");
   if (!root) return;
 
+  const start = () => initHomeAlbum(root);
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          io.disconnect();
+          start();
+        }
+      },
+      { rootMargin: "240px 0px" },
+    );
+    io.observe(root);
+    return;
+  }
+  if ("requestIdleCallback" in window) {
+    requestIdleCallback(start, { timeout: 3000 });
+  } else {
+    setTimeout(start, 1500);
+  }
+})();
+
+function initHomeAlbum(root) {
   const viewport = root.querySelector("[data-home-album-viewport]");
   const track = root.querySelector("[data-home-album-track]");
   const prevBtn = root.querySelector("[data-home-album-prev]");
@@ -936,7 +958,7 @@ if (carButtons.length && selectedCarText && selectedCarBookLink) {
   reduceMotion.addEventListener("change", () => {
     setTransitionOn(!reduceMotion.matches);
   });
-})();
+}
 
 const contactForm = document.querySelector("[data-contact-form]");
 
