@@ -24,6 +24,8 @@ $priorityMap = [
     'article-van-with-driver-phuket.html' => ['priority' => '0.9', 'changefreq' => 'monthly'],
     'article-vip-van-phuket.html' => ['priority' => '0.9', 'changefreq' => 'monthly'],
     'article-vip-van-with-driver-phuket.html' => ['priority' => '0.9', 'changefreq' => 'monthly'],
+    'article-phuket-tour-van.html' => ['priority' => '0.9', 'changefreq' => 'monthly'],
+    'article-phuket-transfer-van.html' => ['priority' => '0.9', 'changefreq' => 'monthly'],
 ];
 
 $defaultArticle = ['priority' => '0.85', 'changefreq' => 'monthly'];

@@ -1442,6 +1442,42 @@ p {
   margin-bottom: 40px;
 }
 
+.seo-guide-grid .panel h3 {
+  font-size: 1.05rem;
+  margin: 0 0 10px;
+  color: #1e160c;
+}
+
+.seo-guide-grid .panel p:last-child {
+  margin-bottom: 0;
+}
+
+.seo-guide-grid .panel a,
+.seo-guide-lead a {
+  font-weight: 600;
+  color: var(--gold-deep);
+}
+
+.service-card__link {
+  margin-top: 12px;
+  font-size: 0.88rem;
+}
+
+.service-card__link a {
+  font-weight: 600;
+  color: var(--gold-deep);
+}
+
+.panel-link {
+  margin-top: 10px;
+  font-size: 0.88rem;
+}
+
+.panel-link a {
+  font-weight: 600;
+  color: var(--gold-deep);
+}
+
 .booking-steps-eyebrow {
   color: var(--gold-deep);
   letter-spacing: 0.12em;

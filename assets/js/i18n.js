@@ -19,22 +19,31 @@
     "nav.cta": { th: "จองรถทันที", en: "Book now" },
 
     "meta.title.index": {
-      th: "รถตู้พร้อมคนขับภูเก็ต | รถตู้ VIP | Infinity Transport",
-      en: "Van with Driver Phuket | VIP Van | Infinity Transport",
+      th: "รถตู้พร้อมคนขับภูเก็ต | รถรับส่งภูเก็ต | Infinity Transport Phuket",
+      en: "Van with Driver Phuket | Phuket Transfer | Infinity Transport",
     },
     "meta.title.about": { th: "เกี่ยวกับเรา | Infinity Transport Phuket", en: "About us | Infinity Transport Phuket" },
-    "meta.title.contact": { th: "ติดต่อและจองรถ | Infinity Transport Phuket", en: "Contact & booking | Infinity Transport Phuket" },
+    "meta.title.contact": {
+      th: "จองรถตู้พร้อมคนขับภูเก็ต | ติดต่อ Infinity Transport Phuket",
+      en: "Book van with driver Phuket | Contact Infinity Transport",
+    },
     "meta.title.services": {
-      th: "รถตู้พร้อมคนขับภูเก็ต | บริการรถตู้ VIP",
-      en: "Van with Driver Phuket | VIP Van Service",
+      th: "รถรับส่งภูเก็ต | รถตู้นำเที่ยวภูเก็ต | บริการรถตู้ภูเก็ต",
+      en: "Phuket Transfer | Tour Van Phuket | Van Services",
     },
     "meta.title.fleet": {
-      th: "รถตู้พร้อมคนขับภูเก็ต | รถตู้ VIP | Infinity Transport",
-      en: "Van with Driver Phuket | VIP Van Fleet",
+      th: "รถตู้ภูเก็ต | รถตู้พร้อมคนขับภูเก็ต | Infinity Transport",
+      en: "Van in Phuket | Van with Driver | Infinity Transport",
     },
-    "meta.title.pricing": { th: "ราคาและแพ็กเกจ | Infinity Transport Phuket", en: "Rates & packages | Infinity Transport Phuket" },
+    "meta.title.pricing": {
+      th: "ราคารถตู้ภูเก็ต | รับส่งสนามบิน | Infinity Transport Phuket",
+      en: "Phuket van rates | Airport transfer | Infinity Transport",
+    },
     "meta.title.reviews": { th: "รีวิวลูกค้า | Infinity Transport Phuket", en: "Customer reviews | Infinity Transport Phuket" },
-    "meta.title.articles": { th: "บทความท่องเที่ยว | Infinity Transport Phuket", en: "Travel articles | Infinity Transport Phuket" },
+    "meta.title.articles": {
+      th: "บทความรถตู้พร้อมคนขับภูเก็ต | Infinity Transport Phuket",
+      en: "Van with driver guides | Infinity Transport Phuket",
+    },
 
     "footer.tagline": {
       th: "รถพร้อมคนขับภูเก็ต เน้นตรงเวลา ปลอดภัย และบริการมืออาชีพ ตลอด 24 ชั่วโมง",

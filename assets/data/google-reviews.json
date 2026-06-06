@@ -2,11 +2,11 @@
     "ok": true,
     "source": "google-places-api",
     "placeId": "ChIJhdE-OgAvUDARWk7AksPaaBk",
-    "fetchedAt": "2026-05-27T04:43:57+00:00",
+    "fetchedAt": "2026-06-02T13:18:07+00:00",
     "place": {
         "name": "Infinity Transport & Travel Phuket",
         "rating": 5,
-        "userRatingCount": 7,
+        "userRatingCount": 8,
         "googleMapsUri": "https:\/\/maps.google.com\/?cid=1830953782041661018&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAIYASAA",
         "gradeTh": "ยอดเยี่ยม",
         "gradeEn": "Excellent"
