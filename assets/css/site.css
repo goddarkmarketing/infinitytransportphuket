@@ -935,6 +935,13 @@ p {
   background: #f2ece4;
 }
 
+.article-cover--natural {
+  height: auto;
+  max-height: clamp(200px, 22vw, 280px);
+  object-fit: contain;
+  object-position: center;
+}
+
 .article-readmore {
   min-height: 40px;
   padding: 8px 14px;
@@ -1095,6 +1102,9 @@ p {
 
 .article-photo .article-section-image {
   margin: 0;
+  aspect-ratio: auto;
+  object-fit: contain;
+  max-height: min(680px, 85vh);
 }
 
 .article-photo figcaption {
