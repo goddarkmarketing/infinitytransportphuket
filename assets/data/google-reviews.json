@@ -2,7 +2,7 @@
     "ok": true,
     "source": "google-places-api",
     "placeId": "ChIJhdE-OgAvUDARWk7AksPaaBk",
-    "fetchedAt": "2026-06-02T13:18:07+00:00",
+    "fetchedAt": "2026-06-15T11:02:50+00:00",
     "place": {
         "name": "Infinity Transport & Travel Phuket",
         "rating": 5,
@@ -22,7 +22,7 @@
             "publishedAt": "2026-03-05T01:26:13.169251173Z",
             "dateTh": "5 มี.ค. 2569",
             "dateEn": "Mar 5, 2026",
-            "relativeTime": "2 months ago",
+            "relativeTime": "3 months ago",
             "googleMapsUri": "https:\/\/www.google.com\/maps\/reviews\/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2s1MVZXWkZia2xKV1dSbVJGWjZUekYxWjJabVJXYxAB!2m1!1s0x30502f003a3ed185:0x1968dac392c04e5a",
             "avatarClass": "greviews-avatar--a"
         },
@@ -50,7 +50,7 @@
             "publishedAt": "2025-11-17T06:37:37.559010060Z",
             "dateTh": "17 พ.ย. 2568",
             "dateEn": "Nov 17, 2025",
-            "relativeTime": "6 months ago",
+            "relativeTime": "7 months ago",
             "googleMapsUri": "https:\/\/www.google.com\/maps\/reviews\/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21kWk1EUnJTRmxRU25SbFN6ZHZXRVJLVlRORmJFRRAB!2m1!1s0x30502f003a3ed185:0x1968dac392c04e5a",
             "avatarClass": "greviews-avatar--c"
         },
@@ -64,22 +64,22 @@
             "publishedAt": "2025-11-17T10:14:40.818607369Z",
             "dateTh": "17 พ.ย. 2568",
             "dateEn": "Nov 17, 2025",
-            "relativeTime": "6 months ago",
+            "relativeTime": "7 months ago",
             "googleMapsUri": "https:\/\/www.google.com\/maps\/reviews\/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21ZMVFrdEJhVFo0TFdZek4yTkpORjlDVFRGaWVsRRAB!2m1!1s0x30502f003a3ed185:0x1968dac392c04e5a",
             "avatarClass": "greviews-avatar--d"
         },
         {
-            "author": "Soraya Praew",
-            "initials": "SP",
-            "photoUri": "https:\/\/lh3.googleusercontent.com\/a-\/ALV-UjXRlv4LzxBW1kgb1-Iu0ayIK5uR0T2tx0sEJ8ha3CIn1EyhgO4=s128-c0x00000000-cc-rp-mo-ba3",
+            "author": "chakkapan wattanarat",
+            "initials": "CW",
+            "photoUri": "https:\/\/lh3.googleusercontent.com\/a-\/ALV-UjXj_RDMtt_87ulWCXzbWNk-nLegramRDuDB6Trt9to2QotiiuHQ=s128-c0x00000000-cc-rp-mo",
             "rating": 5,
-            "text": "I was impressed with the service. The driver was friendly and the car was good. I will definitely use your service again next time. 😊",
-            "snippet": "I was impressed with the service. The driver was friendly and the car was good. I will definitely use your service again next time. 😊",
-            "publishedAt": "2025-04-27T07:20:54.773205Z",
-            "dateTh": "27 เม.ย. 2568",
-            "dateEn": "Apr 27, 2025",
-            "relativeTime": "a year ago",
-            "googleMapsUri": "https:\/\/www.google.com\/maps\/reviews\/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnTURvMWZPMjFRRRAB!2m1!1s0x30502f003a3ed185:0x1968dac392c04e5a",
+            "text": "Easy to contact, convenient, fast, impressive, excellent!",
+            "snippet": "Easy to contact, convenient, fast, impressive, excellent!",
+            "publishedAt": "2026-05-29T06:30:30.730122561Z",
+            "dateTh": "29 พ.ค. 2569",
+            "dateEn": "May 29, 2026",
+            "relativeTime": "2 weeks ago",
+            "googleMapsUri": "https:\/\/www.google.com\/maps\/reviews\/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xob1FXdFdRWGxmUnpJME5uWkJVRzlLYTJSa2RXYxAB!2m1!1s0x30502f003a3ed185:0x1968dac392c04e5a",
             "avatarClass": "greviews-avatar--e"
         }
     ]

@@ -951,6 +951,18 @@ p {
   margin: 0 0 10px;
 }
 
+.article-date {
+  margin: 0 0 8px;
+  font-family: var(--font-detail);
+  font-size: 0.78rem;
+  color: #8a7355;
+  letter-spacing: 0.02em;
+}
+
+.article-date time {
+  font-weight: 500;
+}
+
 .article-source {
   margin-top: 14px;
   font-size: 0.84rem;
