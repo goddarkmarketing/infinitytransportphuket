@@ -896,8 +896,33 @@ p {
   font-size: 1.62rem;
 }
 
+.panel.article-panel {
+  padding: 0;
+}
+
+.article-panel {
+  padding: 0;
+  overflow: hidden;
+}
+
+.article-panel > .article-cover {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.article-panel > .article-cover--banner {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center top;
+  background: #fffdf8;
+}
+
 .article-panel h2 {
-  margin: 0 0 8px;
+  margin: 16px 24px 8px;
   font-size: clamp(1.18rem, 1vw + 0.96rem, 1.62rem);
   line-height: 1.25;
   color: #1f160c;
@@ -930,8 +955,8 @@ p {
   height: clamp(190px, 18vw, 235px);
   object-fit: cover;
   object-position: center;
-  border-radius: 12px;
-  margin-bottom: 12px;
+  border-radius: 0;
+  margin-bottom: 0;
   background: #f2ece4;
 }
 
@@ -943,12 +968,27 @@ p {
 }
 
 .article-readmore {
-  min-height: 40px;
-  padding: 8px 14px;
+  min-height: 42px;
+  padding: 8px 18px;
+  font-size: 0.98rem;
+  font-weight: 600;
+  background: linear-gradient(140deg, #e8c547, #c9a227 55%, #9f7a1f);
+  color: #1e1508;
+  border: 1px solid rgba(159, 122, 31, 0.45);
+  box-shadow: 0 3px 12px rgba(159, 122, 31, 0.28);
+}
+
+.article-readmore:hover {
+  background: linear-gradient(140deg, #f4da89, #d4af37 60%, #9f7a1f);
+  color: #1e1508;
 }
 
 .article-panel p {
-  margin: 0 0 10px;
+  margin: 0 24px 10px;
+}
+
+.article-panel p:last-child {
+  margin-bottom: 24px;
 }
 
 .article-date {
@@ -1117,6 +1157,17 @@ p {
   aspect-ratio: auto;
   object-fit: contain;
   max-height: min(680px, 85vh);
+}
+
+.article-photo .article-section-image--banner {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  object-fit: cover;
+  object-position: center top;
+  max-height: none;
+  background: transparent;
+  border-radius: 14px;
 }
 
 .article-photo figcaption {
@@ -3954,8 +4005,14 @@ textarea {
     grid-template-columns: 1fr;
   }
 
-  .article-cover {
+  .article-cover:not(.article-cover--banner) {
     height: clamp(190px, 56vw, 260px);
+  }
+
+  .article-panel > .article-cover--banner {
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
   }
 
   .brand {
@@ -4648,8 +4705,12 @@ body.about-page {
     margin-top: 20px;
   }
 
-  .panel {
+  .panel:not(.article-panel) {
     padding: 20px 18px;
+  }
+
+  .article-panel {
+    padding: 0;
   }
 
   .panel h3 {
