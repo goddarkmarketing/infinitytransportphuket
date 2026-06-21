@@ -28,6 +28,10 @@ $priorityMap = [
     'article-phuket-airport-transfer.html' => ['priority' => '0.9', 'changefreq' => 'monthly'],
     'article-phuket-tour-van.html' => ['priority' => '0.9', 'changefreq' => 'monthly'],
     'article-phuket-transfer-van.html' => ['priority' => '0.9', 'changefreq' => 'monthly'],
+    'article-phuket-daily-charter.html' => ['priority' => '0.9', 'changefreq' => 'monthly'],
+    'article-phuket-hotel-transfer.html' => ['priority' => '0.9', 'changefreq' => 'monthly'],
+    'article-phuket-9-seater-van.html' => ['priority' => '0.9', 'changefreq' => 'monthly'],
+    'article-phuket-phangnga-transfer.html' => ['priority' => '0.9', 'changefreq' => 'monthly'],
 ];
 
 $defaultArticle = ['priority' => '0.85', 'changefreq' => 'monthly'];
