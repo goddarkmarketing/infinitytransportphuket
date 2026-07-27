@@ -2,7 +2,7 @@
     "ok": true,
     "source": "google-places-api",
     "placeId": "ChIJhdE-OgAvUDARWk7AksPaaBk",
-    "fetchedAt": "2026-06-21T10:11:59+00:00",
+    "fetchedAt": "2026-07-27T04:28:29+00:00",
     "place": {
         "name": "Infinity Transport & Travel Phuket",
         "rating": 5,
@@ -22,7 +22,7 @@
             "publishedAt": "2026-03-05T01:26:13.169251173Z",
             "dateTh": "5 มี.ค. 2569",
             "dateEn": "Mar 5, 2026",
-            "relativeTime": "3 months ago",
+            "relativeTime": "4 months ago",
             "googleMapsUri": "https:\/\/www.google.com\/maps\/reviews\/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2s1MVZXWkZia2xKV1dSbVJGWjZUekYxWjJabVJXYxAB!2m1!1s0x30502f003a3ed185:0x1968dac392c04e5a",
             "avatarClass": "greviews-avatar--a"
         },
@@ -36,7 +36,7 @@
             "publishedAt": "2025-11-18T05:33:55.281884853Z",
             "dateTh": "18 พ.ย. 2568",
             "dateEn": "Nov 18, 2025",
-            "relativeTime": "7 months ago",
+            "relativeTime": "8 months ago",
             "googleMapsUri": "https:\/\/www.google.com\/maps\/reviews\/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xndE9ERkJRamwyVUV4NWFuVndUWEJRZHpkd2FGRRAB!2m1!1s0x30502f003a3ed185:0x1968dac392c04e5a",
             "avatarClass": "greviews-avatar--b"
         },
@@ -50,7 +50,7 @@
             "publishedAt": "2025-11-17T06:37:37.559010060Z",
             "dateTh": "17 พ.ย. 2568",
             "dateEn": "Nov 17, 2025",
-            "relativeTime": "7 months ago",
+            "relativeTime": "8 months ago",
             "googleMapsUri": "https:\/\/www.google.com\/maps\/reviews\/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21kWk1EUnJTRmxRU25SbFN6ZHZXRVJLVlRORmJFRRAB!2m1!1s0x30502f003a3ed185:0x1968dac392c04e5a",
             "avatarClass": "greviews-avatar--c"
         },
@@ -64,7 +64,7 @@
             "publishedAt": "2025-11-17T10:14:40.818607369Z",
             "dateTh": "17 พ.ย. 2568",
             "dateEn": "Nov 17, 2025",
-            "relativeTime": "7 months ago",
+            "relativeTime": "8 months ago",
             "googleMapsUri": "https:\/\/www.google.com\/maps\/reviews\/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT21ZMVFrdEJhVFo0TFdZek4yTkpORjlDVFRGaWVsRRAB!2m1!1s0x30502f003a3ed185:0x1968dac392c04e5a",
             "avatarClass": "greviews-avatar--d"
         },
@@ -78,7 +78,7 @@
             "publishedAt": "2026-05-29T06:30:30.730122561Z",
             "dateTh": "29 พ.ค. 2569",
             "dateEn": "May 29, 2026",
-            "relativeTime": "3 weeks ago",
+            "relativeTime": "a month ago",
             "googleMapsUri": "https:\/\/www.google.com\/maps\/reviews\/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xob1FXdFdRWGxmUnpJME5uWkJVRzlLYTJSa2RXYxAB!2m1!1s0x30502f003a3ed185:0x1968dac392c04e5a",
             "avatarClass": "greviews-avatar--e"
         }

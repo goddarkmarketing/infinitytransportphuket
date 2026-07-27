@@ -21,6 +21,42 @@ if (menuToggle && menu) {
   syncMenuOpen();
 }
 
+/* Services nav dropdown */
+document.querySelectorAll("[data-nav-dropdown]").forEach((root) => {
+  const toggle = root.querySelector("[data-nav-dropdown-toggle]");
+  const trigger = root.querySelector(".nav-dropdown__trigger");
+  if (!toggle || !trigger) return;
+
+  const setOpen = (open) => {
+    root.classList.toggle("is-open", open);
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    trigger.setAttribute("aria-expanded", open ? "true" : "false");
+  };
+
+  toggle.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setOpen(!root.classList.contains("is-open"));
+  });
+
+  root.querySelectorAll(".nav-dropdown__panel a").forEach((a) => {
+    a.addEventListener("click", () => setOpen(false));
+  });
+
+  document.addEventListener("click", (e) => {
+    if (root.classList.contains("is-open") && !root.contains(e.target)) {
+      setOpen(false);
+    }
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && root.classList.contains("is-open")) {
+      setOpen(false);
+      toggle.focus();
+    }
+  });
+});
+
 document.querySelectorAll("[data-back-to-top]").forEach((btn) => {
   btn.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });

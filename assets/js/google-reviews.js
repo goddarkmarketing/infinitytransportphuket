@@ -2,7 +2,12 @@
  * Load Google reviews from google-reviews-api.php and render greviews UI.
  */
 (function () {
-  const API_URL = new URL("./google-reviews-api.php", document.baseURI).href;
+  const scriptEl = document.querySelector('script[src*="google-reviews.js"]');
+  const scriptSrc = scriptEl ? scriptEl.getAttribute("src") : "";
+  const siteRoot = scriptSrc
+    ? new URL(scriptSrc.replace(/assets\/js\/google-reviews\.js(?:\?.*)?$/i, ""), document.baseURI)
+    : new URL("./", document.baseURI);
+  const API_URL = new URL("google-reviews-api.php", siteRoot).href;
   const PLACE_ID = "ChIJhdE-OgAvUDARWk7AksPaaBk";
 
   const tr = (key, vars) => {
@@ -21,7 +26,7 @@
 
   const photoProxyUrl = (uri) => {
     if (!uri) return "";
-    const base = new URL("./google-reviews-photo.php", document.baseURI);
+    const base = new URL("google-reviews-photo.php", siteRoot);
     base.searchParams.set("url", uri);
     return base.href;
   };
@@ -201,7 +206,7 @@
       render(data);
     } catch (e) {
       try {
-        const fallback = new URL("./assets/data/google-reviews.json", document.baseURI).href;
+        const fallback = new URL("assets/data/google-reviews.json", siteRoot).href;
         const res2 = await fetch(fallback);
         if (res2.ok) render(await res2.json());
       } catch (_) {

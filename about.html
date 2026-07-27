@@ -18,7 +18,17 @@
       </a>
       <nav class="menu" data-menu>
         <a href="./index.html" data-i18n="nav.home">หน้าแรก</a>
-        <a href="./services.html" data-i18n="nav.services">บริการ</a>
+
+        <div class="nav-dropdown" data-nav-dropdown>
+          <a class="nav-dropdown__trigger" href="./services.html" data-i18n="nav.services" aria-haspopup="true" aria-expanded="false">บริการ</a>
+          <button type="button" class="nav-dropdown__toggle" data-nav-dropdown-toggle aria-expanded="false" data-i18n-aria="nav.services_submenu" aria-label="เปิดเมนูย่อยบริการ">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="nav-dropdown__panel" role="menu">
+            <a href="./services.html" role="menuitem" data-i18n="nav.services_all">บริการทั้งหมด</a>
+            <a href="./services/phuket-van/" role="menuitem" data-i18n="nav.phuket_van">รถตู้ภูเก็ต</a>
+          </div>
+        </div>
         <a href="./fleet.html" data-i18n="nav.fleet">รถทั้งหมด</a>
         <a href="./pricing.html" data-i18n="nav.pricing">ราคา</a>
         <a class="is-active" href="./about.html" data-i18n="nav.about">เกี่ยวกับเรา</a>

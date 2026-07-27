@@ -15,6 +15,7 @@ $root    = __DIR__;
 $priorityMap = [
     'index.html'    => ['priority' => '1.0',  'changefreq' => 'weekly'],
     'services.html' => ['priority' => '0.9',  'changefreq' => 'monthly'],
+    'services/phuket-van/index.html' => ['priority' => '0.95', 'changefreq' => 'weekly'],
     'fleet.html'    => ['priority' => '0.9',  'changefreq' => 'monthly'],
     'pricing.html'  => ['priority' => '0.9',  'changefreq' => 'monthly'],
     'about.html'    => ['priority' => '0.8',  'changefreq' => 'monthly'],
@@ -53,6 +54,10 @@ $excluded = ['generate-sitemap.php', '404.html'];
 $files = glob($root . DIRECTORY_SEPARATOR . '*.html');
 sort($files);
 
+$nested = [
+    'services/phuket-van/index.html' => $baseUrl . '/services/phuket-van/',
+];
+
 $urls = [];
 
 $indexPath = $root . DIRECTORY_SEPARATOR . 'index.html';
@@ -62,6 +67,20 @@ if (file_exists($indexPath)) {
         'lastmod'    => date('Y-m-d', filemtime($indexPath)),
         'changefreq' => 'weekly',
         'priority'   => '1.0',
+    ];
+}
+
+foreach ($nested as $rel => $loc) {
+    $path = $root . DIRECTORY_SEPARATOR . str_replace('/', DIRECTORY_SEPARATOR, $rel);
+    if (!file_exists($path)) {
+        continue;
+    }
+    $meta = $priorityMap[$rel] ?? ['priority' => '0.9', 'changefreq' => 'weekly'];
+    $urls[] = [
+        'loc'        => $loc,
+        'lastmod'    => date('Y-m-d', filemtime($path)),
+        'changefreq' => $meta['changefreq'],
+        'priority'   => $meta['priority'],
     ];
 }
 

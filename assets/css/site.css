@@ -5047,7 +5047,746 @@ body.about-page {
 }
 
 @media print {
-  .float-contact {
+  .float-contact,
+  .van-sticky-cta {
     display: none;
   }
 }
+
+/* ===== Nav dropdown (Services) ===== */
+.nav-dropdown {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.nav-dropdown__trigger {
+  color: #f3dfaa;
+  font-size: 0.98rem;
+  padding: 7px 10px;
+  border-radius: 999px;
+  transition: background 0.2s ease;
+}
+
+.nav-dropdown__trigger:hover,
+.nav-dropdown__trigger.is-active {
+  background: rgba(212, 175, 55, 0.18);
+}
+
+.nav-dropdown__toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: #f3dfaa;
+  cursor: pointer;
+}
+
+.nav-dropdown__toggle:hover,
+.nav-dropdown.is-open .nav-dropdown__toggle {
+  background: rgba(212, 175, 55, 0.18);
+}
+
+.nav-dropdown__toggle svg {
+  transition: transform 0.2s ease;
+}
+
+.nav-dropdown.is-open .nav-dropdown__toggle svg {
+  transform: rotate(180deg);
+}
+
+.nav-dropdown__panel {
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 200px;
+  padding: 8px;
+  border-radius: 14px;
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  background: #111;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+  z-index: 80;
+}
+
+.nav-dropdown.is-open .nav-dropdown__panel,
+.nav-dropdown:hover .nav-dropdown__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nav-dropdown__panel a {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: #f3dfaa;
+  font-size: 0.92rem;
+  white-space: nowrap;
+}
+
+.nav-dropdown__panel a:hover,
+.nav-dropdown__panel a.is-active {
+  background: rgba(212, 175, 55, 0.18);
+}
+
+@media (max-width: 960px) {
+  .nav-dropdown {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .nav-dropdown__trigger {
+    flex: 1;
+    border-radius: 12px;
+  }
+
+  .nav-dropdown__panel {
+    position: static;
+    width: 100%;
+    min-width: 0;
+    margin-top: 4px;
+    box-shadow: none;
+  }
+
+  .nav-dropdown:hover .nav-dropdown__panel {
+    display: none;
+  }
+
+  .nav-dropdown.is-open .nav-dropdown__panel {
+    display: flex;
+  }
+}
+
+/* ===== Phuket Van Landing Page ===== */
+.van-lp {
+  --van-card-bg: #fffdf8;
+  --van-card-border: rgba(212, 175, 55, 0.22);
+}
+
+.van-lp .breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 0 0 18px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.van-lp .breadcrumb a {
+  color: var(--gold-deep);
+}
+
+.van-lp .breadcrumb span[aria-hidden="true"] {
+  opacity: 0.55;
+}
+
+.van-lp-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  min-height: clamp(420px, 48vw, 560px);
+  padding: 40px 0 52px;
+  display: flex;
+  align-items: center;
+  background: #0d0d0d;
+}
+
+.van-lp-hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.van-lp-hero__bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 72% center;
+  /* ใช้การเรนเดอร์ภาพถ่ายมาตรฐาน — ไม่เบลอ ไม่บังคับ pixelate */
+  image-rendering: auto;
+}
+
+/* อ่านข้อความได้โดยไม่เบลอภาพ และไม่มืดทั้งเฟรม — ไล่เฉพาะฝั่งข้อความ */
+.van-lp-hero__bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(12, 10, 8, 0.62) 0%,
+    rgba(12, 10, 8, 0.38) 38%,
+    rgba(12, 10, 8, 0.12) 62%,
+    rgba(12, 10, 8, 0.04) 100%
+  );
+  pointer-events: none;
+}
+
+.van-lp-hero__content {
+  position: relative;
+  z-index: 1;
+  width: var(--container);
+}
+
+.van-lp-hero .breadcrumb {
+  color: rgba(247, 239, 216, 0.82);
+}
+
+.van-lp-hero .breadcrumb a {
+  color: #f3dfaa;
+}
+
+.van-lp-hero .breadcrumb span[aria-current="page"] {
+  color: #fff6dc;
+}
+
+.van-lp-hero__copy {
+  max-width: 36rem;
+}
+
+.van-lp-hero__copy .eyebrow {
+  margin-bottom: 10px;
+  color: #f3dfaa;
+}
+
+.van-lp-hero__copy h1 {
+  margin: 0 0 14px;
+  font-size: clamp(1.7rem, 3.4vw, 2.45rem);
+  line-height: 1.25;
+  color: #fff8e8;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.van-lp-hero__copy > p {
+  margin: 0 0 20px;
+  color: rgba(255, 246, 220, 0.92);
+  line-height: 1.75;
+  max-width: 38rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.28);
+}
+
+.van-lp-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.van-lp-hero__trust {
+  margin: 0;
+  font-size: 0.92rem;
+  color: rgba(243, 223, 170, 0.88);
+}
+
+.van-lp-section {
+  padding: 64px 0;
+}
+
+.van-lp-section--alt {
+  background: rgba(255, 249, 238, 0.65);
+}
+
+.van-lp-section .section-head {
+  margin-bottom: 28px;
+}
+
+.van-lp-section .section-head p {
+  max-width: 46rem;
+  color: #433626;
+  line-height: 1.7;
+}
+
+.van-lp-feature-grid,
+.van-lp-service-grid,
+.van-lp-route-grid,
+.van-lp-audience-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.van-lp-feature-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.van-lp-service-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.van-lp-route-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.van-lp-audience-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.van-lp-card {
+  background: var(--van-card-bg);
+  border: 1px solid var(--van-card-border);
+  border-radius: 16px;
+  padding: 18px 18px 16px;
+  box-shadow: 0 6px 18px rgba(27, 22, 15, 0.04);
+}
+
+.van-lp-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+.van-lp-card p {
+  margin: 0;
+  color: #433626;
+  line-height: 1.65;
+  font-size: 0.95rem;
+}
+
+.van-lp-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  background: rgba(212, 175, 55, 0.14);
+  color: var(--gold-deep);
+}
+
+.van-lp-card__icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.van-lp-card__link {
+  display: inline-block;
+  margin-top: 12px;
+  color: var(--gold-deep);
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.van-lp-fleet-card {
+  overflow: hidden;
+  padding: 0;
+  flex: 0 0 calc((100% - 48px) / 4);
+  width: calc((100% - 48px) / 4);
+  max-width: none;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+}
+
+.van-lp-fleet-card__media {
+  background: #ffffff;
+  overflow: visible;
+}
+
+.van-lp-fleet-card__media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 2 / 1;
+  object-fit: contain;
+  object-position: center;
+  padding: 10px 12px;
+  background: #ffffff;
+}
+
+.van-lp-fleet-card__body {
+  padding: 14px 16px 16px;
+}
+
+.van-lp-fleet-card__meta {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.van-lp-fleet-slider {
+  position: relative;
+}
+
+.van-lp-fleet-slider__stage {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.van-lp-fleet-slider__viewport {
+  overflow: hidden;
+  border-radius: 4px;
+  min-width: 0;
+}
+
+.van-lp-fleet-slider__track {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  padding: 4px 0 12px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.van-lp-fleet-slider__track::-webkit-scrollbar {
+  display: none;
+}
+
+.van-lp-fleet-slider__nav {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  background: #111;
+  color: #f3dfaa;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.van-lp-fleet-slider__nav:hover {
+  background: #1c1c1c;
+}
+
+.van-lp-fleet-slider__dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.van-lp-fleet-slider__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  border: 0;
+  padding: 0;
+  background: rgba(27, 22, 15, 0.22);
+  cursor: pointer;
+}
+
+.van-lp-fleet-slider__dot.is-active {
+  background: var(--gold-deep);
+  width: 22px;
+}
+
+.van-lp-fleet-more {
+  display: flex;
+  justify-content: center;
+  margin: 18px 0 0;
+}
+
+.van-lp .btn-light {
+  background: #ffffff;
+  color: #1b160f;
+  border: 1px solid rgba(27, 22, 15, 0.14);
+}
+
+.van-lp .btn-light:hover {
+  background: #f7f3ea;
+  color: #1b160f;
+}
+
+.van-lp-route-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--van-card-border);
+  background: var(--van-card-bg);
+}
+
+.van-lp-route-item svg {
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  color: var(--gold-deep);
+}
+
+.van-lp-note {
+  margin: 18px 0 0;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: rgba(212, 175, 55, 0.1);
+  color: #433626;
+  line-height: 1.65;
+}
+
+.van-lp-audience-grid li {
+  list-style: none;
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--van-card-border);
+  background: var(--van-card-bg);
+  color: #433626;
+  line-height: 1.55;
+}
+
+.van-lp-audience-grid {
+  margin: 0 0 18px;
+  padding: 0;
+}
+
+.van-lp-steps {
+  display: grid;
+  gap: 12px;
+  counter-reset: van-step;
+}
+
+.van-lp-step {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  align-items: start;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--van-card-border);
+  background: var(--van-card-bg);
+  counter-increment: van-step;
+}
+
+.van-lp-step__num {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #111;
+  color: #f3dfaa;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.van-lp-step__num::before {
+  content: counter(van-step);
+}
+
+.van-lp-step h3 {
+  margin: 0 0 4px;
+  font-size: 1rem;
+}
+
+.van-lp-step p {
+  margin: 0;
+  color: #433626;
+  line-height: 1.6;
+  font-size: 0.94rem;
+}
+
+.van-lp-seo {
+  max-width: none;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 28px;
+}
+
+.van-lp-seo p {
+  margin: 0 0 14px;
+  color: #433626;
+  line-height: 1.8;
+}
+
+.van-lp-section#seo-content .section-head {
+  max-width: none;
+}
+
+.van-lp-section#seo-content .section-head p {
+  max-width: none;
+}
+
+@media (max-width: 800px) {
+  .van-lp-seo {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+.van-lp-faq {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-auto-flow: column;
+  gap: 10px 20px;
+  align-items: start;
+}
+
+.van-lp-faq details {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--van-card-border);
+  background: var(--van-card-bg);
+}
+
+.van-lp-faq summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.45;
+}
+
+.van-lp-faq details p {
+  margin: 10px 0 0;
+  color: #433626;
+  line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+  .van-lp-faq {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-flow: row;
+  }
+}
+
+.van-lp-cta {
+  padding: 56px 0;
+  background: #0d0d0d;
+  color: #f7efd8;
+}
+
+.van-lp-cta h2 {
+  margin: 0 0 12px;
+  font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+  color: #fff6dc;
+}
+
+.van-lp-cta p {
+  margin: 0 0 18px;
+  max-width: 40rem;
+  color: #e8d9b4;
+  line-height: 1.7;
+}
+
+.van-lp-cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.van-lp-cta__contact {
+  margin: 0;
+  color: #cbb888;
+  font-size: 0.95rem;
+}
+
+.van-lp-cta__contact a {
+  color: #f3dfaa;
+}
+
+.van-sticky-cta {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+  padding: 10px 12px calc(10px + env(safe-area-inset-bottom, 0px));
+  background: rgba(9, 9, 9, 0.96);
+  border-top: 1px solid rgba(212, 175, 55, 0.28);
+  gap: 8px;
+}
+
+.van-sticky-cta a {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.92rem;
+}
+
+.van-sticky-cta__line {
+  background: #06c755;
+  color: #fff;
+}
+
+.van-sticky-cta__phone {
+  background: var(--gold);
+  color: #1b160f;
+}
+
+body.van-lp-page {
+  padding-bottom: 0;
+}
+
+@media (max-width: 960px) {
+  .van-lp-feature-grid,
+  .van-lp-service-grid,
+  .van-lp-route-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .van-lp-fleet-card {
+    flex-basis: calc((100% - 16px) / 2);
+    width: calc((100% - 16px) / 2);
+  }
+
+  .van-lp-hero {
+    min-height: clamp(380px, 70vw, 480px);
+  }
+
+  .van-lp-hero__bg img {
+    object-position: 80% center;
+  }
+}
+
+@media (max-width: 700px) {
+  .van-lp-feature-grid,
+  .van-lp-service-grid,
+  .van-lp-route-grid,
+  .van-lp-audience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .van-lp-fleet-slider__nav {
+    display: none;
+  }
+
+  .van-lp-fleet-slider__stage {
+    grid-template-columns: 1fr;
+  }
+
+  .van-lp-fleet-card {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  .van-sticky-cta {
+    display: flex;
+  }
+
+  body.van-lp-page {
+    padding-bottom: 72px;
+  }
+
+  body.van-lp-page .float-contact {
+    bottom: 78px;
+  }
+}
+
