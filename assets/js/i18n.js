@@ -415,7 +415,8 @@
 
   function t(key, vars) {
     const row = STRINGS[key];
-    let s = row ? row[getLang()] ?? row.th : key;
+    if (!row) return null;
+    let s = row[getLang()] ?? row.th;
     if (vars && typeof s === "string") {
       Object.keys(vars).forEach((k) => {
         s = s.split(`{${k}}`).join(String(vars[k]));
@@ -427,14 +428,16 @@
   function applyAriaFromDict() {
     document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
       const key = el.getAttribute("data-i18n-aria");
-      if (key) el.setAttribute("aria-label", t(key));
+      const val = key ? t(key) : null;
+      if (val) el.setAttribute("aria-label", val);
     });
   }
 
   function applyPlaceholders() {
     document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
       const key = el.getAttribute("data-i18n-placeholder");
-      if (key && ("placeholder" in el)) el.placeholder = t(key);
+      const val = key ? t(key) : null;
+      if (val && ("placeholder" in el)) el.placeholder = val;
     });
   }
 
@@ -443,14 +446,16 @@
       const key = el.getAttribute("data-i18n-alt");
       if (!key || el.tagName !== "IMG") return;
       const vn = el.getAttribute("data-i18n-var-n");
-      el.alt = vn ? t(key, { n: vn }) : t(key);
+      const val = vn ? t(key, { n: vn }) : t(key);
+      if (val) el.alt = val;
     });
   }
 
   function applyTitles() {
     document.querySelectorAll("[data-i18n-title]").forEach((el) => {
       const key = el.getAttribute("data-i18n-title");
-      if (key) el.title = t(key);
+      const val = key ? t(key) : null;
+      if (val) el.title = val;
     });
   }
 
@@ -459,8 +464,11 @@
       const key = el.getAttribute("data-i18n");
       if (!key) return;
       const val = t(key);
+      if (val == null) return;
       if (el.tagName === "TEXTAREA" || el.tagName === "INPUT") {
-        if (el.hasAttribute("data-i18n-placeholder")) el.placeholder = t(el.getAttribute("data-i18n-placeholder"));
+        const phKey = el.getAttribute("data-i18n-placeholder");
+        const ph = phKey ? t(phKey) : null;
+        if (ph) el.placeholder = ph;
         return;
       }
       if (val.includes("\n")) {
@@ -473,7 +481,8 @@
 
   function applyPageTitle() {
     const key = document.body && document.body.getAttribute("data-i18n-page-title");
-    if (key) document.title = t(key);
+    const val = key ? t(key) : null;
+    if (val) document.title = val;
   }
 
   function applyDocumentLang() {
