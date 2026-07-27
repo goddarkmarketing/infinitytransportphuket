@@ -40,6 +40,10 @@ $priorityMap = [
     'article-alphard-phuket.html' => ['priority' => '0.9', 'changefreq' => 'monthly'],
     'article-phuket-business-transfer.html' => ['priority' => '0.9', 'changefreq' => 'monthly'],
     'article-phuket-surat-thani-transfer.html' => ['priority' => '0.9', 'changefreq' => 'monthly'],
+    'article-phuket-van-with-driver-all-routes.html' => ['priority' => '0.9', 'changefreq' => 'monthly'],
+    'article-private-phuket-tour-van.html' => ['priority' => '0.9', 'changefreq' => 'monthly'],
+    'article-phuket-van-airport-hotel-attractions.html' => ['priority' => '0.9', 'changefreq' => 'monthly'],
+    'article-phuket-van-charter-guide.html' => ['priority' => '0.9', 'changefreq' => 'monthly'],
 ];
 
 $defaultArticle = ['priority' => '0.85', 'changefreq' => 'monthly'];
