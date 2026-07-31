@@ -27,15 +27,39 @@ document.querySelectorAll("[data-nav-dropdown]").forEach((root) => {
   const trigger = root.querySelector(".nav-dropdown__trigger");
   if (!toggle || !trigger) return;
 
+  let leaveTimer = 0;
+  const desktopMq = window.matchMedia("(min-width: 961px)");
+
   const setOpen = (open) => {
     root.classList.toggle("is-open", open);
     toggle.setAttribute("aria-expanded", open ? "true" : "false");
     trigger.setAttribute("aria-expanded", open ? "true" : "false");
   };
 
+  const clearLeave = () => {
+    if (leaveTimer) {
+      window.clearTimeout(leaveTimer);
+      leaveTimer = 0;
+    }
+  };
+
+  /* Keep submenu open while the pointer stays over the whole dropdown */
+  root.addEventListener("mouseenter", () => {
+    if (!desktopMq.matches) return;
+    clearLeave();
+    setOpen(true);
+  });
+
+  root.addEventListener("mouseleave", () => {
+    if (!desktopMq.matches) return;
+    clearLeave();
+    leaveTimer = window.setTimeout(() => setOpen(false), 160);
+  });
+
   toggle.addEventListener("click", (e) => {
     e.preventDefault();
     e.stopPropagation();
+    clearLeave();
     setOpen(!root.classList.contains("is-open"));
   });
 
@@ -45,12 +69,14 @@ document.querySelectorAll("[data-nav-dropdown]").forEach((root) => {
 
   document.addEventListener("click", (e) => {
     if (root.classList.contains("is-open") && !root.contains(e.target)) {
+      clearLeave();
       setOpen(false);
     }
   });
 
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && root.classList.contains("is-open")) {
+      clearLeave();
       setOpen(false);
       toggle.focus();
     }

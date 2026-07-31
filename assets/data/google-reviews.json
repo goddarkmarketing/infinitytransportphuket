@@ -2,7 +2,7 @@
     "ok": true,
     "source": "google-places-api",
     "placeId": "ChIJhdE-OgAvUDARWk7AksPaaBk",
-    "fetchedAt": "2026-07-27T04:28:29+00:00",
+    "fetchedAt": "2026-07-31T04:08:46+00:00",
     "place": {
         "name": "Infinity Transport & Travel Phuket",
         "rating": 5,
@@ -78,7 +78,7 @@
             "publishedAt": "2026-05-29T06:30:30.730122561Z",
             "dateTh": "29 พ.ค. 2569",
             "dateEn": "May 29, 2026",
-            "relativeTime": "a month ago",
+            "relativeTime": "2 months ago",
             "googleMapsUri": "https:\/\/www.google.com\/maps\/reviews\/data=!4m6!14m5!1m4!2m3!1sCi9DQUlRQUNvZENodHljRjlvT2xob1FXdFdRWGxmUnpJME5uWkJVRzlLYTJSa2RXYxAB!2m1!1s0x30502f003a3ed185:0x1968dac392c04e5a",
             "avatarClass": "greviews-avatar--e"
         }

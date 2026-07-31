@@ -5116,8 +5116,19 @@ body.about-page {
   z-index: 80;
 }
 
+/* Invisible bridge so the pointer can move from label → panel without closing */
+.nav-dropdown__panel::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -12px;
+  height: 12px;
+}
+
 .nav-dropdown.is-open .nav-dropdown__panel,
-.nav-dropdown:hover .nav-dropdown__panel {
+.nav-dropdown:hover .nav-dropdown__panel,
+.nav-dropdown:focus-within .nav-dropdown__panel {
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -5157,7 +5168,12 @@ body.about-page {
     box-shadow: none;
   }
 
-  .nav-dropdown:hover .nav-dropdown__panel {
+  .nav-dropdown__panel::before {
+    display: none;
+  }
+
+  .nav-dropdown:hover .nav-dropdown__panel,
+  .nav-dropdown:focus-within .nav-dropdown__panel {
     display: none;
   }
 
