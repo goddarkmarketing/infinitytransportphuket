@@ -22,8 +22,8 @@
     "nav.cta": { th: "จองรถทันที", en: "Book now" },
 
     "meta.title.index": {
-      th: "รถตู้พร้อมคนขับภูเก็ต | รถรับส่งภูเก็ต | Infinity Transport Phuket",
-      en: "Van with Driver Phuket | Phuket Transfer | Infinity Transport",
+      th: "รถตู้ภูเก็ต พร้อมคนขับ รับส่งสนามบินและนำเที่ยว | Infinity Transport",
+      en: "Phuket Van with Driver | Airport & Tour | Infinity Transport",
     },
     "meta.title.about": { th: "เกี่ยวกับเรา | Infinity Transport Phuket", en: "About us | Infinity Transport Phuket" },
     "meta.title.contact": {
@@ -49,8 +49,8 @@
     },
 
     "footer.tagline": {
-      th: "รถพร้อมคนขับภูเก็ต เน้นตรงเวลา ปลอดภัย และบริการมืออาชีพ ตลอด 24 ชั่วโมง",
-      en: "Chauffeur service in Phuket — punctual, safe, professional support 24/7.",
+      th: "Infinity Transport & Travel Phuket ให้บริการรถตู้ภูเก็ตพร้อมคนขับ สำหรับรับส่งสนามบินภูเก็ต รถตู้นำเที่ยวภูเก็ต รถตู้เหมาคัน เดินทางธุรกิจ และเดินทางต่างจังหวัด รองรับทั้งลูกค้าส่วนตัว ครอบครัว บริษัท และหมู่คณะ",
+      en: "Infinity Transport & Travel Phuket provides Phuket van service with driver for airport transfers, private tours, full-day charter, business travel, and intercity trips for individuals, families, companies, and groups.",
     },
     "footer.menu_heading": { th: "เมนูหลัก", en: "Main menu" },
     "footer.services_heading": { th: "บริการยอดนิยม", en: "Popular services" },
@@ -99,8 +99,12 @@
     "car.search_btn": { th: "ค้นหา", en: "Search" },
     "car.empty": { th: "ไม่พบรุ่นที่ตรงกับตัวกรองหรือคำค้น", en: "No models match your filters or search." },
     "car.pick_model": { th: "เลือกรุ่นรถ", en: "Choose a model" },
-    "car.section_eyebrow": { th: "เลือกรถในหน้าแรก", en: "Choose on the home page" },
-    "car.section_h2": { th: "เลือกประเภทรถที่ต้องการ แล้วไปจองต่อได้ทันที", en: "Pick a vehicle type, then continue to booking." },
+    "car.section_eyebrow": { th: "เลือกรถตู้", en: "Choose a van" },
+    "car.section_h2": { th: "รถตู้ภูเก็ตที่พร้อมให้บริการ", en: "Phuket vans ready for your trip" },
+    "car.section_lead": {
+      th: "เรามีรถตู้หลายรูปแบบสำหรับการเดินทางในภูเก็ต รองรับทั้งการเดินทางแบบส่วนตัว ครอบครัว บริษัท และหมู่คณะ สามารถเลือกประเภทรถให้เหมาะกับจำนวนผู้โดยสารและสัมภาระได้",
+      en: "Several van types for travel in Phuket — private, family, corporate, and group trips. Choose a vehicle that fits passengers and luggage.",
+    },
     "car.you_picked": { th: "รถที่คุณเลือก:", en: "Your selection:" },
     "car.book_this": { th: "จองรถรุ่นนี้", en: "Book this model" },
     "car.fleet_details": { th: "ดูรายละเอียดรถทั้งหมด", en: "Full fleet details" },
@@ -118,31 +122,44 @@
     "reviews.alt_fail": { th: "โหลดรูป {name} ไม่สำเร็จ", en: "Failed to load image {name}" },
     "reviews.dot_go": { th: "ไปที่ตำแหน่งสไลด์ {n}", en: "Go to slide position {n}" },
 
-    "index.hero.eyebrow": { th: "Phuket Premium Transport", en: "Phuket Premium Transport" },
+    "index.hero.eyebrow": { th: "บริการรถตู้ภูเก็ตพร้อมคนขับ", en: "Phuket van service with driver" },
     "index.hero.h1": {
-      th: "รถตู้พร้อมคนขับภูเก็ต\nตรงเวลา สุภาพ และพร้อมดูแล 24/7",
-      en: "Van with driver in Phuket\nPunctual, courteous care 24/7",
+      th: "รถตู้ภูเก็ต พร้อมคนขับ เดินทางสะดวกทุกเส้นทาง",
+      en: "Phuket van with driver — comfortable travel on every route",
     },
     "index.hero.p": {
-      th: "รถตู้พร้อมคนขับ VIP ภูเก็ต รับส่งสนามบิน เหมาเที่ยว งานธุรกิจ และหมู่คณะ — ตั้งแต่ SUV ถึงรถตู้ใหญ่",
-      en: "VIP van with driver in Phuket — airport runs, tours, business, and groups from SUVs to large vans.",
+      th: "บริการรถตู้ภูเก็ตสำหรับรับส่งสนามบิน นำเที่ยว เหมาคัน เดินทางธุรกิจ และเดินทางต่างจังหวัด พร้อมคนขับมืออาชีพ รถสะอาด ดูแลตลอดการเดินทาง ให้บริการทั้งแบบส่วนตัว ครอบครัว และหมู่คณะ",
+      en: "Phuket van service for airport transfers, tours, full-day charter, business trips, and intercity travel — professional drivers, clean vehicles, private, family, and group options.",
     },
-    "index.hero.book": { th: "จองรถตอนนี้", en: "Book now" },
+    "index.hero.book": { th: "จองรถตู้ภูเก็ต", en: "Book a Phuket van" },
     "index.hero.fleet": { th: "ดูรถทั้งหมด", en: "View fleet" },
 
     "index.pop.eyebrow": { th: "บริการยอดนิยม", en: "Popular services" },
-    "index.pop.h2": { th: "บริการหลักที่ลูกค้าใช้งานบ่อยที่สุด", en: "Services our guests use most" },
-    "index.pop.airport.h": { th: "รับส่งสนามบิน", en: "Airport transfer" },
-    "index.pop.airport.p": { th: "บริการตรงเวลา พร้อมป้ายชื่อผู้โดยสารและช่วยดูแลสัมภาระ", en: "On time, name sign, and luggage help." },
-    "index.pop.daily.h": { th: "เหมาเที่ยวรายวัน", en: "Daily charter" },
-    "index.pop.daily.p": { th: "วางแผนเส้นทางยืดหยุ่น เที่ยวครบตามเวลาที่คุณต้องการ", en: "Flexible routing within your schedule." },
+    "index.pop.h2": { th: "บริการรถตู้ภูเก็ตยอดนิยม", en: "Popular Phuket van services" },
+    "index.pop.lead": {
+      th: "เลือกบริการรถตู้ภูเก็ตให้เหมาะกับการเดินทาง ไม่ว่าจะเป็นรับส่งสนามบิน เที่ยวรอบเกาะ เดินทางธุรกิจ หรือเหมาคันพร้อมคนขับ",
+      en: "Choose a Phuket van service that fits your trip — airport, island tours, business travel, or full-day charter with driver.",
+    },
+    "index.pop.airport.h": { th: "รถตู้รับส่งสนามบินภูเก็ต", en: "Phuket airport van transfer" },
+    "index.pop.airport.p": {
+      th: "บริการรับส่งระหว่างสนามบินภูเก็ต โรงแรม บ้านพัก ท่าเรือ และสถานที่ต่าง ๆ พร้อมรองรับผู้โดยสารและสัมภาระ",
+      en: "Transfers between Phuket Airport, hotels, villas, piers, and other points — passengers and luggage supported.",
+    },
+    "index.pop.daily.h": { th: "รถตู้นำเที่ยวภูเก็ต", en: "Phuket tour van" },
+    "index.pop.daily.p": {
+      th: "เที่ยวภูเก็ตแบบส่วนตัว พร้อมคนขับชำนาญเส้นทาง สามารถวางแผนจุดแวะและเวลาเดินทางได้ตามต้องการ",
+      en: "Private Phuket sightseeing with drivers who know the routes — plan stops and timing your way.",
+    },
     "index.pop.vip.h": { th: "รถตู้ VIP ภูเก็ต", en: "VIP van Phuket" },
     "index.pop.vip.p": {
-      th: "รถตู้พร้อมคนขับ VIP สำหรับรับแขกสำคัญ งานธุรกิจ และโอกาสพิเศษ",
-      en: "VIP van with driver for guests, business, and special events.",
+      th: "บริการรถตู้สำหรับผู้บริหาร ลูกค้า VIP ครอบครัว และผู้ที่ต้องการความสะดวกสบายในการเดินทาง",
+      en: "Van service for executives, VIP guests, families, and travellers who want extra comfort.",
     },
-    "index.pop.group.h": { th: "รถหมู่คณะ", en: "Group transport" },
-    "index.pop.group.p": { th: "รองรับทริปครอบครัว ทีมงาน และกรุ๊ปทัวร์อย่างสะดวกสบาย", en: "Comfortable for families, teams, and tours." },
+    "index.pop.group.h": { th: "รถตู้เหมาคันพร้อมคนขับ", en: "Full-day van charter with driver" },
+    "index.pop.group.p": {
+      th: "เหมาะสำหรับกลุ่มเพื่อน บริษัท กรุ๊ปทัวร์ งานอีเวนต์ และการเดินทางหลายจุดภายในวันเดียว",
+      en: "Ideal for friends, companies, tour groups, events, and multi-stop days.",
+    },
 
     "index.fleet.eyebrow": { th: "Fleet Snapshot", en: "Fleet snapshot" },
     "index.fleet.h2": { th: "ประเภทรถที่พร้อมให้บริการ", en: "Vehicle types available" },
@@ -151,50 +168,71 @@
     "index.fleet.per_trip": { th: "ต่อเที่ยว", en: "per trip" },
     "index.fleet.hours4": { th: "6 ชั่วโมง", en: "6 hours" },
     "index.fleet.hours10": { th: "10 ชั่วโมง", en: "10 hours" },
-    "index.price.eyebrow": { th: "ราคาเริ่มต้น", en: "Starting rates" },
-    "index.price.h2": { th: "เริ่มต้นชัดเจน ตัดสินใจง่าย", en: "Clear starting prices" },
+    "index.price.eyebrow": { th: "ราคาบริการ", en: "Service rates" },
+    "index.price.h2": { th: "ราคาบริการรถตู้ภูเก็ต", en: "Phuket van service rates" },
+    "index.price.lead": {
+      th: "ค่าบริการขึ้นอยู่กับเส้นทาง ระยะเวลา ประเภทรถ จำนวนผู้โดยสาร และจำนวนจุดแวะ กรุณาแจ้งรายละเอียดการเดินทางเพื่อรับราคาที่เหมาะสม",
+      en: "Rates depend on route, duration, vehicle type, passenger count, and stops. Share your trip details for a suitable quote.",
+    },
+    "index.price.note": {
+      th: "ราคาดังกล่าวอาจเปลี่ยนแปลงตามวันเดินทาง เส้นทาง และเงื่อนไขการให้บริการ",
+      en: "Listed rates may change by travel date, route, and service conditions.",
+    },
     "index.price.th_pkg": { th: "แพ็กเกจ / บริการ", en: "Package / service" },
     "index.price.th_from": { th: "ราคาเริ่มต้น", en: "From" },
     "index.price.th_unit": { th: "ระยะเวลา / หน่วย", en: "Duration / unit" },
-    "index.split.btn_models": { th: "ดูรายละเอียดรถแต่ละรุ่น", en: "Model details" },
+    "index.split.btn_models": { th: "ดูรถตู้พร้อมคนขับ", en: "View vans with driver" },
     "index.split.btn_packages": { th: "ดูแพ็กเกจทั้งหมด", en: "All packages" },
 
-    "index.album.eyebrow": { th: "ทำไมต้องเรา", en: "Why us" },
+    "index.album.eyebrow": { th: "เกี่ยวกับเรา", en: "About us" },
     "index.album.h2": {
-      th: "ทำไมต้องเช่ารถตู้พร้อมคนขับกับ Infinity Transport Phuket",
-      en: "Why book a chauffeured van with Infinity Transport Phuket",
+      th: "ทำไมลูกค้าจึงเลือกใช้บริการรถตู้ภูเก็ตกับ Infinity Transport",
+      en: "Why guests choose Infinity Transport for Phuket van service",
     },
     "index.album.lead": {
-      th: "บริการรถตู้พร้อมคนขับภูเก็ต รถตู้ VIP ภูเก็ต และรถตู้พร้อมคนขับ VIP เน้นความปลอดภัย ตรงเวลา และบริการเป็นกันเองตลอดเส้นทาง",
-      en: "Van with driver Phuket, VIP van Phuket, and VIP van with driver — safe, on time, and welcoming from pickup to drop-off.",
+      th: "Infinity Transport & Travel Phuket ให้บริการรถตู้ภูเก็ตพร้อมคนขับ สำหรับนักท่องเที่ยว ครอบครัว บริษัท และหมู่คณะ โดยให้ความสำคัญกับความปลอดภัย ความสะอาด ความตรงต่อเวลา และการบริการที่เป็นมืออาชีพ ลูกค้าสามารถใช้บริการรถตู้รับส่งสนามบินภูเก็ต รถตู้นำเที่ยวภูเก็ต รถตู้เหมาคัน เดินทางธุรกิจ และเดินทางแบบส่วนตัวได้ตามแผนที่ต้องการ ทีมงานช่วยวางแผนเส้นทางทั้งในเกาะภูเก็ตและพื้นที่ใกล้เคียง เช่น พังงา เขาหลัก และกระบี่ รวมถึงแจ้งรายละเอียดก่อนออกเดินทางเพื่อให้การเดินทางราบรื่น หากต้องการเช่ารถตู้ภูเก็ตพร้อมคนขับ หรือสอบถามบริการรถตู้ VIP ภูเก็ต สามารถแจ้งวันเดินทาง จุดรับส่ง จำนวนผู้โดยสาร และสัมภาระ เพื่อให้ทีมงานแนะนำประเภทรถที่เหมาะสมและเสนอราคาตามเงื่อนไขจริงได้",
+      en: "Infinity Transport & Travel Phuket offers Phuket van service with driver for travellers, families, companies, and groups — with focus on safety, cleanliness, punctuality, and professional care. Use airport transfers, tour vans, full-day charter, business travel, and private trips. We help plan routes in Phuket and nearby areas such as Phang Nga, Khao Lak, and Krabi, and confirm details before departure. Share date, pickup points, passengers, and luggage for a suitable vehicle and quote.",
     },
     "index.album.point1": {
-      th: "คนขับมืออาชีพ สุภาพ ชำนาญเส้นทางในภูเก็ตและสนามบิน",
-      en: "Professional, courteous drivers who know Phuket and airport routes inside out.",
+      th: "คนขับชำนาญเส้นทางภูเก็ตและสนามบิน",
+      en: "Drivers who know Phuket and airport routes",
     },
     "index.album.point2": {
-      th: "รถสะอาด ปรับอากาศเย็นสบาย นั่งสบายทั้งครอบครัวและหมู่คณะ",
-      en: "Clean, air-conditioned vehicles — comfortable for families and groups.",
+      th: "รถสะอาดและตรวจเช็กก่อนใช้งาน",
+      en: "Clean vehicles checked before each trip",
     },
     "index.album.point3": {
-      th: "ราคาและแพ็กเกจชัดเจน จองง่าย ติดต่อได้ตลอด 24 ชั่วโมง",
-      en: "Clear rates and packages, easy booking, and 24/7 contact when you need us.",
+      th: "แจ้งรายละเอียดก่อนเดินทาง และรองรับหลายรูปแบบการเดินทาง",
+      en: "Trip details confirmed in advance — multiple travel styles supported",
     },
     "index.album.grid_aria": { th: "อัลบั้มภาพรถและบริการ", en: "Gallery of vehicles and service" },
     "index.album.prev_aria": { th: "เลื่อนอัลบั้มไปภาพก่อนหน้า", en: "Previous gallery slide" },
     "index.album.next_aria": { th: "เลื่อนอัลบั้มไปภาพถัดไป", en: "Next gallery slide" },
 
-    "index.trust.eyebrow": { th: "ความน่าเชื่อถือ", en: "Trust" },
-    "index.trust.h2": { th: "ลูกค้าไว้วางใจเพราะเราใส่ใจทุกรายละเอียด", en: "Trusted because we mind every detail" },
-    "index.trust.a.h": { th: "รีวิวดีต่อเนื่อง", en: "Consistently strong reviews" },
-    "index.trust.a.p": { th: "ลูกค้าส่วนใหญ่ชื่นชมเรื่องตรงเวลา ความสุภาพ และรถสะอาด", en: "Guests praise punctuality, courtesy, and clean cars." },
-    "index.trust.b.h": { th: "ดูแลงานจริงทุกวัน", en: "Hands-on every day" },
-    "index.trust.b.p": { th: "รองรับทั้งนักท่องเที่ยวและลูกค้าองค์กรในภูเก็ตอย่างต่อเนื่อง", en: "Leisure and corporate clients across Phuket." },
-    "index.trust.c.h": { th: "ทีมงานตอบไว", en: "Quick responses" },
-    "index.trust.c.p": { th: "มีแอดมินคอยประสานงานให้ตั้งแต่ก่อนเดินทางจนจบทริป", en: "Coordinators from pre-trip through drop-off." },
+    "index.trust.eyebrow": { th: "จุดเด่นบริการ", en: "Service highlights" },
+    "index.trust.h2": { th: "บริการรถตู้ภูเก็ตที่ใส่ใจทุกการเดินทาง", en: "Phuket van service that looks after every trip" },
+    "index.trust.a.h": { th: "ปลอดภัยและตรงต่อเวลา", en: "Safe and on time" },
+    "index.trust.a.p": {
+      th: "คนขับชำนาญเส้นทางภูเก็ต วางแผนเวลาให้เหมาะกับไฟลท์และจุดหมาย",
+      en: "Drivers who know Phuket routes and plan timing around flights and destinations.",
+    },
+    "index.trust.b.h": { th: "รถสะอาด เหมาะกับผู้โดยสาร", en: "Clean vehicles for every guest" },
+    "index.trust.b.p": {
+      th: "ตรวจเช็กรถก่อนใช้งาน รองรับทั้งครอบครัว บริษัท และหมู่คณะ",
+      en: "Vehicles checked before use — suitable for families, companies, and groups.",
+    },
+    "index.trust.c.h": { th: "ติดต่อสะดวกในพื้นที่ภูเก็ต", en: "Easy contact in Phuket" },
+    "index.trust.c.p": {
+      th: "สอบถามและยืนยันรายละเอียดก่อนเดินทางได้ผ่าน LINE โทรศัพท์ หรือหน้าติดต่อ",
+      en: "Ask questions and confirm details via LINE, phone, or the contact page before you travel.",
+    },
 
     "index.rev.eyebrow": { th: "รีวิวจากลูกค้า", en: "Guest reviews" },
-    "index.rev.h2": { th: "ประสบการณ์จริงที่เลือก Infinity Transport Phuket", en: "Real experiences with Infinity Transport Phuket" },
+    "index.rev.h2": { th: "รีวิวจากผู้ใช้บริการรถตู้ภูเก็ต", en: "Reviews from Phuket van guests" },
+    "index.rev.lead": {
+      th: "ความคิดเห็นจากลูกค้าที่ใช้บริการรับส่งสนามบิน รถตู้นำเที่ยวภูเก็ต และรถตู้พร้อมคนขับ",
+      en: "Feedback from guests who used airport transfers, Phuket tour vans, and vans with driver.",
+    },
     "index.rev.prev": { th: "รีวิวก่อนหน้า", en: "Previous reviews" },
     "index.rev.next": { th: "รีวิวถัดไป", en: "Next reviews" },
     "index.greviews.grade": { th: "ยอดเยี่ยม", en: "Excellent" },
@@ -209,16 +247,46 @@
     "index.greviews.next": { th: "รีวิวถัดไป", en: "Next review" },
 
     "index.faq.eyebrow": { th: "คำถามที่พบบ่อย", en: "FAQ" },
-    "index.faq.h2": { th: "FAQ ก่อนจองรถ", en: "FAQ before you book" },
-    "index.faq.a.h": { th: "จองล่วงหน้ากี่วันดี?", en: "How far ahead should I book?" },
-    "index.faq.a.p": { th: "แนะนำอย่างน้อย 1-3 วัน โดยเฉพาะช่วงไฮซีซันเพื่อให้ได้รุ่นรถตามต้องการ", en: "At least 1–3 days ahead, more in peak season." },
-    "index.faq.b.h": { th: "รับงานนอกภูเก็ตไหม?", en: "Do you leave Phuket?" },
-    "index.faq.b.p": { th: "รับงานนอกพื้นที่ได้ กรุณาแจ้งปลายทางเพื่อประเมินราคาและเวลาเดินทาง", en: "Yes — share destinations for timing and pricing." },
-    "index.faq.c.h": { th: "ชำระเงินแบบไหนได้บ้าง?", en: "How can I pay?" },
-    "index.faq.c.p": { th: "รองรับโอนธนาคารและช่องทางที่ตกลงกับทีมงานก่อนเริ่มงาน", en: "Bank transfer and agreed methods before service." },
+    "index.faq.h2": { th: "คำถามที่พบบ่อยเกี่ยวกับรถตู้ภูเก็ต", en: "Frequently asked questions about Phuket vans" },
+    "index.faq.a.h": { th: "รถตู้ภูเก็ตรองรับผู้โดยสารได้กี่คน", en: "How many passengers can a Phuket van take?" },
+    "index.faq.a.p": {
+      th: "จำนวนผู้โดยสารขึ้นอยู่กับรุ่นรถและจำนวนสัมภาระ กรุณาแจ้งจำนวนผู้โดยสารและกระเป๋า เพื่อให้ทีมงานแนะนำรถที่เหมาะสม",
+      en: "Capacity depends on the model and luggage. Share passenger and bag counts so we can recommend a suitable vehicle.",
+    },
+    "index.faq.b.h": { th: "มีบริการรถตู้รับส่งสนามบินภูเก็ตหรือไม่", en: "Do you offer Phuket airport van transfers?" },
+    "index.faq.b.p": {
+      th: "มีบริการรับส่งระหว่างสนามบินภูเก็ต โรงแรม บ้านพัก ท่าเรือ และสถานที่ต่าง ๆ ทั้งภายในภูเก็ตและจังหวัดใกล้เคียง",
+      en: "Yes — transfers between Phuket Airport, hotels, villas, piers, and other points in Phuket and nearby provinces.",
+    },
+    "index.faq.c.h": { th: "สามารถจองรถตู้นำเที่ยวภูเก็ตแบบเต็มวันได้หรือไม่", en: "Can I book a full-day Phuket tour van?" },
+    "index.faq.c.p": {
+      th: "สามารถจองได้ทั้งแบบเที่ยวเดียว ครึ่งวัน เต็มวัน และหลายวัน โดยสามารถแจ้งสถานที่ที่ต้องการเดินทางให้ทีมงานช่วยวางแผนเส้นทางได้",
+      en: "Yes — one-way, half-day, full-day, and multi-day options. Share places you want to visit and we can help plan the route.",
+    },
+    "index.faq.d.h": { th: "รถตู้ภูเก็ตสามารถเดินทางไปพังงาหรือกระบี่ได้หรือไม่", en: "Can Phuket vans go to Phang Nga or Krabi?" },
+    "index.faq.d.p": {
+      th: "สามารถเดินทางจากภูเก็ตไปพังงา เขาหลัก กระบี่ และพื้นที่ใกล้เคียงได้ โดยค่าบริการขึ้นอยู่กับเส้นทางและระยะเวลาใช้งาน",
+      en: "Yes — from Phuket to Phang Nga, Khao Lak, Krabi, and nearby areas. Rates depend on route and duration.",
+    },
+    "index.faq.e.h": { th: "ราคาบริการรถตู้ภูเก็ตคิดอย่างไร", en: "How are Phuket van rates calculated?" },
+    "index.faq.e.p": {
+      th: "ราคาขึ้นอยู่กับเส้นทาง ระยะเวลา ประเภทรถ จำนวนผู้โดยสาร และจำนวนจุดแวะ ทีมงานจะแจ้งรายละเอียดก่อนยืนยันการจอง",
+      en: "Rates depend on route, duration, vehicle type, passengers, and stops. We confirm details before you book.",
+    },
+    "index.faq.f.h": { th: "ควรจองรถตู้ล่วงหน้ากี่วัน", en: "How many days ahead should I book?" },
+    "index.faq.f.p": {
+      th: "แนะนำให้จองล่วงหน้า โดยเฉพาะช่วงวันหยุดหรือฤดูกาลท่องเที่ยว เพื่อให้มีรถตรงตามประเภทและเวลาที่ต้องการ",
+      en: "Booking ahead is recommended — especially on holidays or peak season — so the right vehicle is available on time.",
+    },
 
-    "index.strip.h2": { th: "พร้อมจองรถแล้วใช่ไหม?", en: "Ready to book?" },
-    "index.strip.p": { th: "ติดต่อผ่าน LINE, WhatsApp หรือโทรหาเราได้ทันที", en: "Reach us on LINE, WhatsApp, or phone." },
+    "index.strip.h2": { th: "กำลังมองหารถตู้ภูเก็ตพร้อมคนขับอยู่ใช่ไหม", en: "Looking for a Phuket van with driver?" },
+    "index.strip.p": {
+      th: "แจ้งวันเดินทาง จุดรับส่ง จำนวนผู้โดยสาร และแผนการเดินทาง ทีมงานจะตรวจสอบรถว่างและเสนอราคาที่เหมาะสมให้คุณ",
+      en: "Share your date, pickup points, passenger count, and plan — we check availability and send a suitable quote.",
+    },
+    "index.strip.line": { th: "จองผ่าน LINE", en: "Book via LINE" },
+    "index.strip.phone": { th: "โทรสอบถาม", en: "Call us" },
+    "index.strip.fleet": { th: "ดูรถทั้งหมด", en: "View fleet" },
     "index.strip.contact": { th: "ติดต่อและจองรถ", en: "Contact & book" },
     "index.strip.services": { th: "ดูบริการทั้งหมด", en: "All services" },
 
@@ -347,19 +415,19 @@
     "legal.line_handle": { th: "LINE Official", en: "LINE Official" },
 
     "index.booking.eyebrow": { th: "ขั้นตอนการจอง", en: "Booking steps" },
-    "index.booking.h2": { th: "จองง่ายใน 4 ขั้นตอน", en: "Book in 4 easy steps" },
+    "index.booking.h2": { th: "จองรถตู้ภูเก็ตง่าย ๆ เพียงไม่กี่ขั้นตอน", en: "Book a Phuket van in a few simple steps" },
     "index.booking.lead": {
-      th: "จากเลือกรถจนถึงวันออกเดินทาง — ทำตามลำดับนี้ ทีมงานดูแลให้ครบในที่เดียว",
-      en: "From choosing a car to departure day — follow these steps; one team handles it all.",
+      th: "จากสอบถามจนถึงวันเดินทาง — ทำตามลำดับนี้ ทีมงานช่วยดูแลรายละเอียดให้",
+      en: "From enquiry to travel day — follow these steps; our team handles the details.",
     },
-    "index.booking.s1t": { th: "เลือกรถ", en: "Choose a vehicle" },
-    "index.booking.s1p": { th: "เลือกรุ่นให้เหมาะกับจำนวนผู้โดยสารและสัมภาระ", en: "Pick a model for your passengers and luggage." },
+    "index.booking.s1t": { th: "ติดต่อสอบถาม", en: "Get in touch" },
+    "index.booking.s1p": { th: "แจ้งวัน เวลา และเส้นทางที่ต้องการเดินทาง", en: "Share your date, time, and route." },
     "index.booking.s2t": { th: "แจ้งรายละเอียด", en: "Share details" },
-    "index.booking.s2p": { th: "ส่งวัน เวลา จุดรับ-ส่ง และแผนการเดินทาง", en: "Send date, time, pickup/drop-off, and itinerary." },
-    "index.booking.s3t": { th: "ยืนยันราคา", en: "Confirm pricing" },
-    "index.booking.s3p": { th: "ทีมงานสรุปรายการและราคาให้ชัดเจนก่อนยืนยัน", en: "We confirm scope and price before you commit." },
-    "index.booking.s4t": { th: "ออกเดินทาง", en: "Travel day" },
-    "index.booking.s4p": { th: "รถและคนขับพร้อมให้บริการตรงเวลาแบบมืออาชีพ", en: "Vehicle and driver arrive on time, professionally." },
+    "index.booking.s2p": { th: "ระบุจำนวนผู้โดยสาร จำนวนสัมภาระ และจุดรับส่ง", en: "Confirm passengers, luggage, and pickup/drop-off points." },
+    "index.booking.s3t": { th: "รับใบเสนอราคา", en: "Receive a quote" },
+    "index.booking.s3p": { th: "ทีมงานตรวจสอบรถและแจ้งรายละเอียดค่าบริการ", en: "We check vehicle availability and share service details." },
+    "index.booking.s4t": { th: "ยืนยันการจอง", en: "Confirm booking" },
+    "index.booking.s4p": { th: "ยืนยันวันเดินทางและรอรับบริการตามเวลานัดหมาย", en: "Confirm your travel date and meet us at the arranged time." },
 
     "index.greviews.footnote": {
       th: "รีวิวดึงจาก Google Business Profile อัปเดตอัตโนมัติ",
@@ -369,10 +437,10 @@
     "index.greviews.verified_title": { th: "รีวิวที่ยืนยันแล้ว", en: "Verified review" },
     "index.greviews.verified_aria": { th: "ยืนยันแล้ว", en: "Verified" },
 
-    "index.img.airport": { th: "รับส่งสนามบิน พร้อมคนขับถือป้ายชื่อและช่วยดูแลสัมภาระ", en: "Airport transfer with sign service and luggage help." },
-    "index.img.daily": { th: "เหมาเที่ยวรายวัน รถหรูพร้อมคนขับ วางแผนเส้นทางท่องเที่ยว", en: "Daily charter with driver and flexible sightseeing." },
-    "index.img.vip": { th: "รถ VIP พร้อมคนขับมืออาชีพ รับแขกคนสำคัญและงานธุรกิจ", en: "VIP chauffeur service for guests and business." },
-    "index.img.group": { th: "รถหมู่คณะ รถตู้รับกลุ่มทัวร์และครอบครัว พร้อมคนขับ", en: "Group van for tours and families with driver." },
+    "index.img.airport": { th: "รถตู้รับส่งสนามบินภูเก็ต พร้อมคนขับดูแลสัมภาระ", en: "Phuket airport van transfer with driver luggage assistance" },
+    "index.img.daily": { th: "รถตู้นำเที่ยวภูเก็ตแบบส่วนตัวพร้อมคนขับ", en: "Private Phuket tour van with driver" },
+    "index.img.vip": { th: "รถตู้ VIP ภูเก็ตสำหรับผู้บริหารและแขกคนสำคัญ", en: "VIP van Phuket for executives and guests" },
+    "index.img.group": { th: "รถตู้เหมาคันพร้อมคนขับสำหรับกลุ่มและหมู่คณะ", en: "Full-day van charter with driver for groups" },
 
     "meta.title.reviews": { th: "รีวิวจากลูกค้า | Infinity Transport Phuket", en: "Customer reviews | Infinity Transport Phuket" },
     "reviews.intro.eyebrow": { th: "Reviews", en: "Reviews" },
@@ -487,7 +555,7 @@
 
   function applyDocumentLang() {
     const lang = getLang();
-    document.documentElement.lang = lang === "en" ? "en" : "th";
+    document.documentElement.lang = lang === "en" ? "en" : "th-TH";
     document.documentElement.setAttribute("data-lang", lang);
   }
 

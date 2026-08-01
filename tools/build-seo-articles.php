@@ -482,3 +482,6 @@ foreach ($targets as $file) {
   $built++;
 }
 echo "Done: {$built}\n";
+
+// Keep footer + floating contact identical to the rest of the site
+passthru('php ' . escapeshellarg(__DIR__ . '/sync-footer-float.php'));
