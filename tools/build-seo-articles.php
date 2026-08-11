@@ -9,6 +9,7 @@ $root = dirname(__DIR__);
 $srcDir = $root . '/content/seo-articles';
 $dateDisplay = [
   '2026-07-31' => '31 กรกฎาคม 2026',
+  '2026-08-11' => '11 สิงหาคม 2026',
 ];
 
 $covers = [
@@ -16,13 +17,17 @@ $covers = [
   'rent-phuket-van-with-driver' => 'cover-rent-phuket-van-with-driver.png',
   'phuket-tour-van-private' => 'cover-phuket-tour-van-private.png',
   'phuket-airport-vip-van' => 'cover-phuket-airport-vip-van.png',
+  'phuket-van-complete-guide' => 'cover-phuket-van-complete-guide.png',
+  'phuket-sightseeing-van-guide' => 'cover-phuket-sightseeing-van-guide.png',
+  'phuket-airport-van-guide' => 'cover-phuket-airport-van-guide.png',
+  'phuket-charter-vip-van-guide' => 'cover-phuket-charter-vip-van-guide.png',
 ];
 
 $targets = [
-  '05-phuket-van-convenient-routes.md',
-  '06-rent-phuket-van-with-driver.md',
-  '07-phuket-tour-van-private.md',
-  '08-phuket-airport-vip-van.md',
+  '09-phuket-van-complete-guide.md',
+  '10-phuket-sightseeing-van-guide.md',
+  '11-phuket-airport-van-guide.md',
+  '12-phuket-charter-vip-van-guide.md',
 ];
 
 function parseFrontMatter(string $raw): array {
@@ -56,8 +61,11 @@ function mdToSections(string $body): array {
   $cutMarkers = [
     "\n## On-page SEO",
     "\n## On-Page SEO",
+    "\n## On-page SEO Pack",
     "\n## Image SEO",
+    "\n## Image SEO Proposals",
     "\n## Schema",
+    "\n## Schema JSON-LD",
     "\n## JSON-LD",
   ];
   foreach ($cutMarkers as $cut) {
@@ -473,6 +481,10 @@ foreach ($targets as $file) {
     'rent-phuket-van-with-driver' => 'rent-van-intro',
     'phuket-tour-van-private' => 'tour-van-private-intro',
     'phuket-airport-vip-van' => 'airport-vip-intro',
+    'phuket-van-complete-guide' => 'van-complete-guide-intro',
+    'phuket-sightseeing-van-guide' => 'sightseeing-van-intro',
+    'phuket-airport-van-guide' => 'airport-van-guide-intro',
+    'phuket-charter-vip-van-guide' => 'charter-vip-guide-intro',
   ];
   $introId = $introMap[$slug] ?? $introId;
   $html = renderPage($meta, $sections, $faq, $cover, $dateTh, $introId, $faqSectionId);
@@ -484,4 +496,5 @@ foreach ($targets as $file) {
 echo "Done: {$built}\n";
 
 // Keep footer + floating contact identical to the rest of the site
-passthru('php ' . escapeshellarg(__DIR__ . '/sync-footer-float.php'));
+$phpBin = defined('PHP_BINARY') && PHP_BINARY !== '' ? PHP_BINARY : 'php';
+passthru(escapeshellarg($phpBin) . ' ' . escapeshellarg(__DIR__ . '/sync-footer-float.php'));
