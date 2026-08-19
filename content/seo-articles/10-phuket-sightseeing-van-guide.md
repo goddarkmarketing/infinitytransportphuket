@@ -9,7 +9,7 @@ canonical: "https://infinitytransportphuket.com/article-phuket-sightseeing-van-g
 og_title: "รถตู้นำเที่ยวภูเก็ต เที่ยวส่วนตัววางแผนเส้นทางได้เอง | Infinity Transport & Travel Phuket"
 og_description: "วางแผนรถตู้นำเที่ยวภูเก็ตแบบส่วนตัวได้เอง เปรียบเทียบกับทัวร์รวม ไอเดียเส้นทางครึ่งวัน-เต็มวัน เช็คลิสต์ก่อนจอง และวิธีเลือกผู้ให้บริการ"
 twitter_card: "summary_large_image"
-date: "2026-08-11"
+date: "2026-08-19"
 primary_keywords:
   - รถตู้นำเที่ยวภูเก็ต
   - รถตู้เที่ยวภูเก็ต
@@ -364,7 +364,7 @@ Infinity Transport & Travel Phuket ให้บริการ **รถตู้
 | og_title | รถตู้นำเที่ยวภูเก็ต เที่ยวส่วนตัววางแผนเส้นทางได้เอง \| Infinity Transport & Travel Phuket |
 | og_description | วางแผนรถตู้นำเที่ยวภูเก็ตแบบส่วนตัวได้เอง เปรียบเทียบกับทัวร์รวม ไอเดียเส้นทางครึ่งวัน-เต็มวัน เช็คลิสต์ก่อนจอง และวิธีเลือกผู้ให้บริการ |
 | twitter_card | summary_large_image |
-| date | 2026-08-11 |
+| date | 2026-08-19 |
 | primary_keywords | รถตู้นำเที่ยวภูเก็ต, รถตู้เที่ยวภูเก็ต |
 | secondary_keywords | รถตู้ภูเก็ต, เช่ารถตู้ภูเก็ตพร้อมคนขับ, Private Van Phuket |
 | internal_links | ./index.html, ./services.html, ./fleet.html, ./pricing.html, ./contact.html, ./services/phuket-van/ |
@@ -418,8 +418,8 @@ Infinity Transport & Travel Phuket ให้บริการ **รถตู้
         "name": "Infinity Transport & Travel Phuket",
         "url": "https://infinitytransportphuket.com"
       },
-      "datePublished": "2026-08-11",
-      "dateModified": "2026-08-11",
+      "datePublished": "2026-08-19",
+      "dateModified": "2026-08-19",
       "inLanguage": "th",
       "url": "https://infinitytransportphuket.com/article-phuket-sightseeing-van-guide.html"
     },

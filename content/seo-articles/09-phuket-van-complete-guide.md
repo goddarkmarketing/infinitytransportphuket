@@ -9,7 +9,7 @@ canonical: "https://infinitytransportphuket.com/article-phuket-van-complete-guid
 og_title: "รถตู้ภูเก็ต พร้อมคนขับ เดินทางสะดวกทุกเส้นทาง | Infinity Transport & Travel Phuket"
 og_description: "คู่มือครบเรื่องรถตู้ภูเก็ตพร้อมคนขับ ตั้งแต่รับส่งสนามบิน นำเที่ยวรอบเกาะ เส้นทางยอดนิยม วิธีเลือกผู้ให้บริการ และเช็คลิสต์ก่อนจอง"
 twitter_card: "summary_large_image"
-date: "2026-08-11"
+date: "2026-08-19"
 primary_keywords:
   - รถตู้ภูเก็ต
   - รถตู้ภูเก็ตพร้อมคนขับ
@@ -433,7 +433,7 @@ Infinity Transport & Travel Phuket ให้บริการเดินทา
 | og_title | รถตู้ภูเก็ต พร้อมคนขับ เดินทางสะดวกทุกเส้นทาง \| Infinity Transport & Travel Phuket |
 | og_description | คู่มือครบเรื่องรถตู้ภูเก็ตพร้อมคนขับ ตั้งแต่รับส่งสนามบิน นำเที่ยวรอบเกาะ เส้นทางยอดนิยม วิธีเลือกผู้ให้บริการ และเช็คลิสต์ก่อนจอง |
 | twitter_card | summary_large_image |
-| date | 2026-08-11 |
+| date | 2026-08-19 |
 | primary_keywords | รถตู้ภูเก็ต, รถตู้ภูเก็ตพร้อมคนขับ |
 | secondary_keywords | รถตู้นำเที่ยวภูเก็ต, รถตู้รับส่งสนามบินภูเก็ต, เช่ารถตู้ภูเก็ต, Phuket Van Service, Phuket Private Van |
 | internal_links | ./index.html, ./services.html, ./fleet.html, ./pricing.html, ./contact.html, ./services/phuket-van/ |
@@ -488,8 +488,8 @@ Infinity Transport & Travel Phuket ให้บริการเดินทา
         "name": "Infinity Transport & Travel Phuket",
         "url": "https://infinitytransportphuket.com"
       },
-      "datePublished": "2026-08-11",
-      "dateModified": "2026-08-11",
+      "datePublished": "2026-08-19",
+      "dateModified": "2026-08-19",
       "inLanguage": "th",
       "keywords": "รถตู้ภูเก็ต, รถตู้ภูเก็ตพร้อมคนขับ, รถตู้นำเที่ยวภูเก็ต, รถตู้รับส่งสนามบินภูเก็ต",
       "url": "https://infinitytransportphuket.com/article-phuket-van-complete-guide.html"

@@ -9,7 +9,7 @@ canonical: "https://infinitytransportphuket.com/article-phuket-charter-vip-van-g
 og_title: "รถตู้เหมาภูเก็ตและรถตู้ VIP เลือกแบบไหนให้เหมาะทริป | Infinity Transport & Travel Phuket"
 og_description: "เลือก รถตู้เหมาภูเก็ต หรือ รถตู้ VIP ภูเก็ต ให้เหมาะทริป ด้วยแนวคิดครึ่งวัน-เต็มวัน วันหลายจุด โอกาสธุรกิจ และเช็คลิสต์ก่อนเช่ารถตู้ภูเก็ต"
 twitter_card: "summary_large_image"
-date: "2026-08-11"
+date: "2026-08-19"
 primary_keywords:
   - รถตู้เหมาภูเก็ต
   - รถตู้ VIP ภูเก็ต
@@ -427,7 +427,7 @@ Infinity Transport & Travel Phuket ให้บริการ **รถตู้
 | og_title | รถตู้เหมาภูเก็ตและรถตู้ VIP เลือกแบบไหนให้เหมาะทริป \| Infinity Transport & Travel Phuket |
 | og_description | เลือก รถตู้เหมาภูเก็ต หรือ รถตู้ VIP ภูเก็ต ให้เหมาะทริป ด้วยแนวคิดครึ่งวัน-เต็มวัน วันหลายจุด โอกาสธุรกิจ และเช็คลิสต์ก่อนเช่ารถตู้ภูเก็ต |
 | twitter_card | summary_large_image |
-| date | 2026-08-11 |
+| date | 2026-08-19 |
 | primary_keywords | รถตู้เหมาภูเก็ต, รถตู้ VIP ภูเก็ต, เช่ารถตู้ภูเก็ต |
 | secondary_keywords | Phuket Van Service, รถตู้ภูเก็ต, รถตู้ภูเก็ตพร้อมคนขับ, รถตู้เหมาครึ่งวัน, รถตู้เหมาเต็มวัน |
 | internal_links | ./index.html, ./services.html, ./fleet.html, ./pricing.html, ./contact.html, ./services/phuket-van/, ./article-vip-van-phuket.html |
@@ -483,8 +483,8 @@ Infinity Transport & Travel Phuket ให้บริการ **รถตู้
         "name": "Infinity Transport & Travel Phuket",
         "url": "https://infinitytransportphuket.com"
       },
-      "datePublished": "2026-08-11",
-      "dateModified": "2026-08-11",
+      "datePublished": "2026-08-19",
+      "dateModified": "2026-08-19",
       "inLanguage": "th",
       "url": "https://infinitytransportphuket.com/article-phuket-charter-vip-van-guide.html"
     },

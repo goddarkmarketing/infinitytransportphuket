@@ -9,7 +9,7 @@ canonical: "https://infinitytransportphuket.com/article-phuket-airport-van-guide
 og_title: "รถตู้รับส่งสนามบินภูเก็ต ถึงที่หมายสบายตั้งแต่ก้าวแรก | Infinity Transport & Travel Phuket"
 og_description: "คู่มือ Phuket Airport Transfer ครบ จุดนัดพบ สัมภาระ เที่ยวบินล่าช้า โซนป่าตอง กะตะ กะรน บางเทา ราไวย์ เช็คลิสต์ และเคล็ดลับถึงดึก"
 twitter_card: "summary_large_image"
-date: "2026-08-11"
+date: "2026-08-19"
 primary_keywords:
   - รถตู้รับส่งสนามบินภูเก็ต
   - Phuket Airport Transfer
@@ -427,7 +427,7 @@ Infinity Transport & Travel Phuket ให้ความสำคัญกับ
 | og_title | รถตู้รับส่งสนามบินภูเก็ต ถึงที่หมายสบายตั้งแต่ก้าวแรก \| Infinity Transport & Travel Phuket |
 | og_description | คู่มือ Phuket Airport Transfer ครบ จุดนัดพบ สัมภาระ เที่ยวบินล่าช้า โซนป่าตอง กะตะ กะรน บางเทา ราไวย์ เช็คลิสต์ และเคล็ดลับถึงดึก |
 | twitter_card | summary_large_image |
-| date | 2026-08-11 |
+| date | 2026-08-19 |
 | primary_keywords | รถตู้รับส่งสนามบินภูเก็ต, Phuket Airport Transfer |
 | secondary_keywords | รถตู้ภูเก็ต, รถตู้ VIP ภูเก็ต, รถรับส่งสนามบินภูเก็ต, Airport Transfer Phuket |
 | internal_links | ./index.html, ./services.html, ./fleet.html, ./pricing.html, ./contact.html, ./services/phuket-van/ |
@@ -485,8 +485,8 @@ Infinity Transport & Travel Phuket ให้ความสำคัญกับ
         "name": "Infinity Transport & Travel Phuket",
         "url": "https://infinitytransportphuket.com"
       },
-      "datePublished": "2026-08-11",
-      "dateModified": "2026-08-11",
+      "datePublished": "2026-08-19",
+      "dateModified": "2026-08-19",
       "inLanguage": "th",
       "url": "https://infinitytransportphuket.com/article-phuket-airport-van-guide.html"
     },
