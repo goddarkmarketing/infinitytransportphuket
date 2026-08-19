@@ -211,6 +211,10 @@
 
     "index.trust.eyebrow": { th: "จุดเด่นบริการ", en: "Service highlights" },
     "index.trust.h2": { th: "บริการรถตู้ภูเก็ตที่ใส่ใจทุกการเดินทาง", en: "Phuket van service that looks after every trip" },
+    "index.trust.lead": {
+      th: "เน้นความปลอดภัย ความตรงต่อเวลา ความสะอาด ความเหมาะสมกับผู้โดยสาร และการติดต่อที่สะดวกเมื่อเดินทางในภูเก็ต",
+      en: "Focus on safety, punctuality, cleanliness, the right vehicle for your group, and easy contact while travelling in Phuket.",
+    },
     "index.trust.a.h": { th: "ปลอดภัยและตรงต่อเวลา", en: "Safe and on time" },
     "index.trust.a.p": {
       th: "คนขับชำนาญเส้นทางภูเก็ต วางแผนเวลาให้เหมาะกับไฟลท์และจุดหมาย",

@@ -16,7 +16,7 @@ $footerTpl = <<<'HTML'
             <img class="site-footer__mark" src="{{BASE}}assets/images/header-logo-144.jpg" width="52" height="52" alt="" decoding="async">
             <span class="site-footer__logo-text"><span>INFINITY TRANSPORT</span><span>&amp; TRAVEL PHUKET</span></span>
           </a>
-          <p class="site-footer__tagline" data-i18n="footer.tagline">รถพร้อมคนขับภูเก็ต เน้นตรงเวลา ปลอดภัย และบริการมืออาชีพ ตลอด 24 ชั่วโมง</p>
+          <p class="site-footer__tagline" data-i18n="footer.tagline">Infinity Transport &amp; Travel Phuket ให้บริการรถตู้ภูเก็ตพร้อมคนขับ สำหรับรับส่งสนามบินภูเก็ต รถตู้นำเที่ยวภูเก็ต รถตู้เหมาคัน เดินทางธุรกิจ และเดินทางต่างจังหวัด รองรับทั้งลูกค้าส่วนตัว ครอบครัว บริษัท และหมู่คณะ</p>
         </div>
         <div class="site-footer__block">
           <h2 class="site-footer__heading" data-i18n="footer.menu_heading">เมนูหลัก</h2>

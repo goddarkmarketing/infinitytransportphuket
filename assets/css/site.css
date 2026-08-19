@@ -988,7 +988,8 @@ p {
   background: #fffdf8;
 }
 
-.article-panel h2 {
+.article-panel h2,
+.article-panel h3 {
   margin: 16px 24px 8px;
   font-size: var(--card-title-size);
   line-height: 1.3;
