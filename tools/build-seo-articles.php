@@ -11,6 +11,7 @@ $dateDisplay = [
   '2026-07-31' => '31 กรกฎาคม 2026',
   '2026-08-11' => '11 สิงหาคม 2026',
   '2026-08-19' => '19 สิงหาคม 2026',
+  '2026-08-26' => '26 สิงหาคม 2026',
 ];
 
 $covers = [
@@ -22,13 +23,17 @@ $covers = [
   'phuket-sightseeing-van-guide' => 'cover-phuket-sightseeing-van-guide.png',
   'phuket-airport-van-guide' => 'cover-phuket-airport-van-guide.png',
   'phuket-charter-vip-van-guide' => 'cover-phuket-charter-vip-van-guide.png',
+  'phuket-van-price-guide' => 'cover-phuket-van-price-guide.png',
+  'phuket-van-family-travel' => 'cover-phuket-van-family-travel.png',
+  'phuket-van-interprovince-guide' => 'cover-phuket-van-interprovince-guide.png',
+  'phuket-van-booking-guide' => 'cover-phuket-van-booking-guide.png',
 ];
 
 $targets = [
-  '09-phuket-van-complete-guide.md',
-  '10-phuket-sightseeing-van-guide.md',
-  '11-phuket-airport-van-guide.md',
-  '12-phuket-charter-vip-van-guide.md',
+  '13-phuket-van-price-guide.md',
+  '14-phuket-van-family-travel.md',
+  '15-phuket-van-interprovince-guide.md',
+  '16-phuket-van-booking-guide.md',
 ];
 
 function parseFrontMatter(string $raw): array {
@@ -469,6 +474,10 @@ foreach ($targets as $file) {
     continue;
   }
   $raw = file_get_contents($path);
+  // Strip UTF-8 BOM so front-matter regex matches
+  if (str_starts_with($raw, "\xEF\xBB\xBF")) {
+    $raw = substr($raw, 3);
+  }
   [$meta, $body] = parseFrontMatter($raw);
   $slug = $meta['url_slug'] ?? pathinfo($file, PATHINFO_FILENAME);
   $cover = $covers[$slug] ?? 'van-with-driver-phuket.png';
@@ -486,6 +495,10 @@ foreach ($targets as $file) {
     'phuket-sightseeing-van-guide' => 'sightseeing-van-intro',
     'phuket-airport-van-guide' => 'airport-van-guide-intro',
     'phuket-charter-vip-van-guide' => 'charter-vip-guide-intro',
+    'phuket-van-price-guide' => 'price-guide-intro',
+    'phuket-van-family-travel' => 'family-travel-intro',
+    'phuket-van-interprovince-guide' => 'interprovince-guide-intro',
+    'phuket-van-booking-guide' => 'booking-guide-intro',
   ];
   $introId = $introMap[$slug] ?? $introId;
   $html = renderPage($meta, $sections, $faq, $cover, $dateTh, $introId, $faqSectionId);
