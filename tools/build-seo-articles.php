@@ -324,13 +324,13 @@ function renderPage(array $meta, array $sections, array $faq, string $cover, str
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{$title}">
   <meta name="twitter:description" content="{$desc}">
-  <link rel="stylesheet" href="./assets/css/site.css?v=20260731">
+  <link rel="stylesheet" href="./assets/css/site.css?v=20260907a">
 </head>
 <body>
   <header class="site-header">
     <div class="container nav">
       <a class="brand" href="./index.html">
-        <img class="brand-mark" src="./assets/images/header-logo-144.jpg" width="72" height="72" alt="Infinity Transport &amp; Travel Phuket" decoding="async">
+        <img class="brand-mark" src="./assets/images/header-logo.png" width="168" height="112" alt="Infinity Transport &amp; Travel Phuket" decoding="async">
         <span class="brand-text"><span class="brand-text__line">INFINITY TRANSPORT</span><span class="brand-text__line">&amp; TRAVEL PHUKET</span></span>
       </a>
       <nav class="menu" data-menu>
@@ -435,7 +435,7 @@ function renderPage(array $meta, array $sections, array $faq, string $cover, str
       <div class="container site-footer__grid">
         <div class="site-footer__brand">
           <a class="site-footer__logo" href="./index.html">
-            <img class="site-footer__mark" src="./assets/images/header-logo-144.jpg" width="52" height="52" alt="" decoding="async">
+            <img class="site-footer__mark" src="./assets/images/header-logo.png" width="160" height="107" alt="Infinity Transport &amp; Travel Phuket" decoding="async">
             <span class="site-footer__logo-text"><span>INFINITY TRANSPORT</span><span>&amp; TRAVEL PHUKET</span></span>
           </a>
           <p class="site-footer__tagline" data-i18n="footer.tagline">รถพร้อมคนขับภูเก็ต เน้นตรงเวลา ปลอดภัย และบริการมืออาชีพ ตลอด 24 ชั่วโมง</p>
