@@ -12,6 +12,7 @@ $dateDisplay = [
   '2026-08-11' => '11 สิงหาคม 2026',
   '2026-08-19' => '19 สิงหาคม 2026',
   '2026-08-26' => '26 สิงหาคม 2026',
+  '2026-09-11' => '11 กันยายน 2026',
 ];
 
 $covers = [
@@ -27,13 +28,11 @@ $covers = [
   'phuket-van-family-travel' => 'cover-phuket-van-family-travel.png',
   'phuket-van-interprovince-guide' => 'cover-phuket-van-interprovince-guide.png',
   'phuket-van-booking-guide' => 'cover-phuket-van-booking-guide.png',
+  'phuket-van-night-flight-guide' => 'cover-phuket-van-night-flight.png',
 ];
 
 $targets = [
-  '13-phuket-van-price-guide.md',
-  '14-phuket-van-family-travel.md',
-  '15-phuket-van-interprovince-guide.md',
-  '16-phuket-van-booking-guide.md',
+  '17-phuket-van-night-flight-guide.md',
 ];
 
 function parseFrontMatter(string $raw): array {
@@ -499,6 +498,7 @@ foreach ($targets as $file) {
     'phuket-van-family-travel' => 'family-travel-intro',
     'phuket-van-interprovince-guide' => 'interprovince-guide-intro',
     'phuket-van-booking-guide' => 'booking-guide-intro',
+    'phuket-van-night-flight-guide' => 'night-flight-guide-intro',
   ];
   $introId = $introMap[$slug] ?? $introId;
   $html = renderPage($meta, $sections, $faq, $cover, $dateTh, $introId, $faqSectionId);
