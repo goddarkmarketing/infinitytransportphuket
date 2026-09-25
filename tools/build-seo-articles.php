@@ -13,6 +13,7 @@ $dateDisplay = [
   '2026-08-19' => '19 สิงหาคม 2026',
   '2026-08-26' => '26 สิงหาคม 2026',
   '2026-09-11' => '11 กันยายน 2026',
+  '2026-09-25' => '25 กันยายน 2026',
 ];
 
 $covers = [
@@ -29,10 +30,17 @@ $covers = [
   'phuket-van-interprovince-guide' => 'cover-phuket-van-interprovince-guide.png',
   'phuket-van-booking-guide' => 'cover-phuket-van-booking-guide.png',
   'phuket-van-night-flight-guide' => 'cover-phuket-van-night-flight.png',
+  'phuket-van-hotel-transfer-guide' => 'cover-phuket-van-hotel-transfer-guide.png',
+  'phuket-van-group-event-guide' => 'cover-phuket-van-group-event-guide.png',
+  'phuket-van-rainy-season-guide' => 'cover-phuket-van-rainy-season-guide.png',
+  'phuket-van-business-travel-guide' => 'cover-phuket-van-business-travel-guide.png',
 ];
 
 $targets = [
-  '17-phuket-van-night-flight-guide.md',
+  '18-phuket-van-hotel-transfer-guide.md',
+  '19-phuket-van-group-event-guide.md',
+  '20-phuket-van-rainy-season-guide.md',
+  '21-phuket-van-business-travel-guide.md',
 ];
 
 function parseFrontMatter(string $raw): array {
@@ -499,6 +507,10 @@ foreach ($targets as $file) {
     'phuket-van-interprovince-guide' => 'interprovince-guide-intro',
     'phuket-van-booking-guide' => 'booking-guide-intro',
     'phuket-van-night-flight-guide' => 'night-flight-guide-intro',
+    'phuket-van-hotel-transfer-guide' => 'hotel-transfer-guide-intro',
+    'phuket-van-group-event-guide' => 'group-event-guide-intro',
+    'phuket-van-rainy-season-guide' => 'rainy-season-guide-intro',
+    'phuket-van-business-travel-guide' => 'business-travel-guide-intro',
   ];
   $introId = $introMap[$slug] ?? $introId;
   $html = renderPage($meta, $sections, $faq, $cover, $dateTh, $introId, $faqSectionId);
