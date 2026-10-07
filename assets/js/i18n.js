@@ -221,6 +221,7 @@
     "index.album.grid_aria": { th: "อัลบั้มภาพรถและบริการ", en: "Gallery of vehicles and service" },
     "index.album.prev_aria": { th: "เลื่อนอัลบั้มไปภาพก่อนหน้า", en: "Previous gallery slide" },
     "index.album.next_aria": { th: "เลื่อนอัลบั้มไปภาพถัดไป", en: "Next gallery slide" },
+    "index.album.thumbs_aria": { th: "ภาพย่อในอัลบั้ม เลื่อนซ้ายขวาเพื่อดูภาพทั้งหมด", en: "Gallery thumbnails, scroll sideways to see every photo" },
 
     "index.trust.eyebrow": { th: "จุดเด่นบริการ", en: "Service highlights" },
     "index.trust.h2": { th: "บริการรถตู้ภูเก็ตที่ใส่ใจทุกการเดินทาง", en: "Phuket van service that looks after every trip" },

@@ -782,6 +782,7 @@ if (carButtons.length && selectedCarText && selectedCarBookLink) {
 function initHomeAlbum(root) {
   const viewport = root.querySelector("[data-home-album-viewport]");
   const track = root.querySelector("[data-home-album-track]");
+  const thumbsEl = root.querySelector("[data-home-album-thumbs]");
   const prevBtn = root.querySelector("[data-home-album-prev]");
   const nextBtn = root.querySelector("[data-home-album-next]");
   const tmpl = document.getElementById("home-album-imgs");
@@ -839,6 +840,50 @@ function initHomeAlbum(root) {
     const off = !loopMode;
     prevBtn.disabled = off;
     nextBtn.disabled = off;
+  };
+
+  const syncThumbs = () => {
+    if (!thumbsEl) return;
+    const buttons = thumbsEl.querySelectorAll(".home-album__thumb");
+    const activeIndex = ((pos % n) + n) % n;
+    buttons.forEach((btn, i) => {
+      const on = i === activeIndex;
+      btn.classList.toggle("is-active", on);
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+    const active = buttons[activeIndex];
+    if (!active) return;
+    const pad = 8;
+    const left = active.offsetLeft;
+    const right = left + active.offsetWidth;
+    const viewL = thumbsEl.scrollLeft;
+    const viewR = viewL + thumbsEl.clientWidth;
+    if (left < viewL + pad || right > viewR - pad) {
+      thumbsEl.scrollTo({
+        left: Math.max(0, left - (thumbsEl.clientWidth - active.offsetWidth) / 2),
+        behavior: reduceMotion.matches ? "auto" : "smooth",
+      });
+    }
+  };
+
+  const buildThumbs = () => {
+    if (!thumbsEl) return;
+    thumbsEl.replaceChildren();
+    sources.forEach((imgEl, i) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "home-album__thumb";
+      const label = imgEl.getAttribute("alt") || `ภาพที่ ${i + 1}`;
+      btn.setAttribute("aria-label", label);
+      const img = imgEl.cloneNode(true);
+      img.removeAttribute("width");
+      img.removeAttribute("height");
+      img.alt = "";
+      btn.appendChild(img);
+      btn.addEventListener("click", () => goTo(i));
+      thumbsEl.appendChild(btn);
+    });
+    syncThumbs();
   };
 
   const buildTrackIfNeeded = () => {
@@ -909,6 +954,7 @@ function initHomeAlbum(root) {
     setTransitionOn(!reduceMotion.matches);
 
     syncNav();
+    syncThumbs();
   };
 
   const goNext = () => {
@@ -916,11 +962,13 @@ function initHomeAlbum(root) {
     if (reduceMotion.matches) {
       pos = (pos + 1) % n;
       applyTransform();
+      syncThumbs();
       return;
     }
     if (pos < n - 1) {
       pos += 1;
       applyTransform();
+      syncThumbs();
       return;
     }
     pendingSnap = "next";
@@ -933,11 +981,13 @@ function initHomeAlbum(root) {
     if (reduceMotion.matches) {
       pos = (pos - 1 + n) % n;
       applyTransform();
+      syncThumbs();
       return;
     }
     if (pos > 0) {
       pos -= 1;
       applyTransform();
+      syncThumbs();
       return;
     }
     pendingSnap = "prev";
@@ -954,6 +1004,7 @@ function initHomeAlbum(root) {
       track.style.transform = `translateX(${-(n * step)}px)`;
       void track.offsetHeight;
       setTransitionOn(!reduceMotion.matches);
+      syncThumbs();
     } else if (pendingSnap === "prev") {
       pendingSnap = null;
       pos = n - 1;
@@ -961,8 +1012,25 @@ function initHomeAlbum(root) {
       track.style.transform = `translateX(${-(2 * n - 1) * step}px)`;
       void track.offsetHeight;
       setTransitionOn(!reduceMotion.matches);
+      syncThumbs();
     }
   });
+
+  const goTo = (index) => {
+    if (!loopMode) return;
+    const next = ((index % n) + n) % n;
+    if (next === pos) {
+      syncThumbs();
+      return;
+    }
+    pendingSnap = null;
+    pos = next;
+    setTransitionOn(!reduceMotion.matches);
+    applyTransform();
+    syncThumbs();
+  };
+
+  buildThumbs();
 
   prevBtn.addEventListener("click", goPrev);
   nextBtn.addEventListener("click", goNext);
